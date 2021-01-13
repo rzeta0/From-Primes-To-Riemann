@@ -7,6 +7,10 @@
 \textclass beamer
 \begin_preamble
 \usetheme{Madrid}
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[default]
+%\setbeamertemplate{enumerate items}[default]
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -81,7 +85,7 @@
 \begin_body
 
 \begin_layout Title
-What Is a Prime?
+What Is A Prime?
 \end_layout
 
 \begin_layout Subtitle
@@ -97,33 +101,7 @@ Tariq Rashid
 status open
 
 \begin_layout Plain Layout
-Agenda
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Intro
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-ssss
+Counting Numbers
 \end_layout
 
 \end_inset
@@ -134,7 +112,7 @@ ssss
 \begin_layout Frame
 \begin_inset Formula 
 \[
-7\times3=21
+1,2,3,4,5,6,7,8,\ldots
 \]
 
 \end_inset
@@ -143,9 +121,376 @@ ssss
 \end_layout
 
 \begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Multiplication
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\begin{align*}
+2\times4 & =8\\
+5\times5 & =25
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Factors & Products
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
 \begin_inset Formula 
 \[
-2\times2=6
+3\times4=12
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+3 and 4 are 
+\series bold
+factors
+\end_layout
+
+\begin_layout Itemize
+12 is a 
+\series bold
+product
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Multiplying Whole Numbers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+a\times b=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+if 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are whole numbers, so is 
+\begin_inset Formula $c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+An Innocent Question
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+a\times b=c
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ can be any counting number we feel like choosing
+\end_layout
+
+\begin_layout Itemize
+does 
+\begin_inset Formula $c$
+\end_inset
+
+ have this freedom too?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+An Innocent Question
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+c=12
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $a=3$
+\end_inset
+
+, 
+\begin_inset Formula $b=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a=2$
+\end_inset
+
+, 
+\begin_inset Formula $b=6$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Formula 
+\[
+c=100
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $a=2$
+\end_inset
+
+, 
+\begin_inset Formula $b=50$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $a=10$
+\end_inset
+
+, 
+\begin_inset Formula $b=10$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+An Innocent Question
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+c=7
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+no solutions !
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Formula 
+\[
+c=11
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+no solutions !
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+These are 
+\series bold
+prime numbers
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Prime Numbers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+2,3,5,7,11,13,19,23,29,31,37,41,43,47,53,\ldots
 \]
 
 \end_inset
@@ -165,8 +510,19 @@ ssss
 status open
 
 \begin_layout Plain Layout
-wdwded
+What About 1?
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\[
+c=7=1\times7
+\]
 
 \end_inset
 
@@ -175,34 +531,33 @@ wdwded
 
 \begin_deeper
 \begin_layout Itemize
-ygyr
+We exclude 1 as a legitimate factor.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-aa
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-ss
+If we didn't, there would be no prime numbers because every number would
+ have a factor of 1
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-ww
-\end_layout
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
 
-\begin_layout Itemize
-ww
-\end_layout
 
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Section
-Main 
 \end_layout
 
 \begin_layout Frame
@@ -210,7 +565,47 @@ Main
 status open
 
 \begin_layout Plain Layout
-Apple
+What About 1?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Even worse...
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Formula 
+\begin{align*}
+12 & =3\times4\\
+12 & =3\times4\times1\\
+12 & =3\times4\times1\times1\times1\times1\\
+12 & =3\times4\times1\times1\times1\times1\times1\times1\times\ldots
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Negative Primes?
 \end_layout
 
 \end_inset
@@ -219,12 +614,89 @@ Apple
 \end_layout
 
 \begin_layout Frame
-ssss
+History:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
-\begin_layout Fact
-aokoakoa
+\begin_layout Itemize
+prime numbers were known about and discussed in ancient times ...
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+..
+ before the idea of a negative number was accepted
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Apparent Randomness
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Formula 
+\begin{align*}
+ & 2,3,5,7,11,13,17,19,23,29\\
+ & 31,37,41,43,47,53,59,61,67,71\\
+ & 73,79,83,89,97,101,103,107,109,113\\
+ & 127,131,137,139,149,151,157,163,167,173\\
+ & 179,181,191,193,197,199,211,223,227,229\\
+ & 233,239,241,251,257,263,269,271,277,281
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No apparent pattern 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ hard to predict next prime
 \end_layout
 
 \end_deeper
