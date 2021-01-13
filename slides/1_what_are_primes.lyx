@@ -11,6 +11,11 @@
 \setbeamertemplate{itemize items}[circle]
 \setbeamertemplate{itemize subitem}[default]
 %\setbeamertemplate{enumerate items}[default]
+
+%\setbeamercolor{background canvas}{bg=lightgray!30}
+
+\definecolor{MyBackground}{rgb}{1.0000,0.95,0.85}
+\setbeamercolor{background canvas}{bg=MyBackground}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -325,7 +330,7 @@ An Innocent Question
 \begin_layout Frame
 \begin_inset Formula 
 \[
-c=12
+a\times b=12
 \]
 
 \end_inset
@@ -357,10 +362,30 @@ c=12
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+An Innocent Question
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Formula 
 \[
-c=100
+a\times b=100
 \]
 
 \end_inset
@@ -415,7 +440,7 @@ An Innocent Question
 \begin_layout Frame
 \begin_inset Formula 
 \[
-c=7
+a\times b=7
 \]
 
 \end_inset
@@ -425,14 +450,58 @@ c=7
 
 \begin_deeper
 \begin_layout Itemize
+\begin_inset Formula $a=?$
+\end_inset
+
+, 
+\begin_inset Formula $b=?$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 no solutions !
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+An Innocent Question
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Frame
 \begin_inset Formula 
 \[
-c=11
+a\times b=11
 \]
 
 \end_inset
@@ -441,6 +510,17 @@ c=11
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $a=?$
+\end_inset
+
+, 
+\begin_inset Formula $b=?$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 no solutions !
 \begin_inset ERT
@@ -459,7 +539,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-These are 
+These numbers 7 and 11 are 
 \series bold
 prime numbers
 \series default
@@ -521,7 +601,7 @@ What About 1?
 \begin_layout Frame
 \begin_inset Formula 
 \[
-c=7=1\times7
+1\times7=7
 \]
 
 \end_inset
@@ -650,7 +730,11 @@ bigskip
 
 \begin_layout Itemize
 ..
- before the idea of a negative number was accepted
+ before the idea of a 
+\series bold
+negative number
+\series default
+ was accepted
 \end_layout
 
 \end_deeper
