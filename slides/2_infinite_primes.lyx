@@ -117,19 +117,19 @@ Do Primes Fizzle Out?
 
 \begin_deeper
 \begin_layout Itemize
-Every multiple of 2 is not a prime.
+Every multiple of 2 is not prime.
 \end_layout
 
 \begin_layout Itemize
-Every multiple of 3 is not a prime.
+Every multiple of 3 is not prime.
 \end_layout
 
 \begin_layout Itemize
-Every multiple of 4 is not a prime.
+Every multiple of 4 is not prime.
 \end_layout
 
 \begin_layout Itemize
-Every multiple of 5 is not a prime.
+Every multiple of 5 is not prime.
  ...
 \begin_inset ERT
 status open
@@ -426,9 +426,45 @@ Is
 \begin_inset Formula $y$
 \end_inset
 
- prime? There are only two options - yes or no.
+ prime? There are only two options:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+option 1 - yes it is prime
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+option 2 - no it is not prime
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -457,11 +493,6 @@ Option 1 - yes,
 \end_inset
 
  is prime.
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-We just found a new prime that isn't in the original list !
 \begin_inset ERT
 status open
 
@@ -477,14 +508,9 @@ bigskip
 
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Option 2 - no, it is not prime.
-\end_layout
-
 \begin_deeper
 \begin_layout Itemize
-That means it must have factors which are primes amongst
+We just found a new prime that isn't in the original list !
 \end_layout
 
 \end_deeper
@@ -511,37 +537,391 @@ Euclid's Proof (300BC)
 
 \begin_deeper
 \begin_layout Itemize
-ss
+Option 2 - no, it is not prime.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So it must have factors from our list of primes 
+\begin_inset Formula $p_{1},p_{2},p_{3},\ldots p_{n}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-ss
+\begin_layout Itemize
+That means 
+\begin_inset Formula $y$
+\end_inset
+
+ can be divided by one of the primes 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ exactly.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{y}{p_{i}}=\frac{p_{1}\cdot p_{2}\cdot p_{3}\cdot p_{4}\cdot\ldots\cdot p_{n}}{p_{i}}+\frac{1}{p_{i}}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+That second part doesn't divide without a remainder!
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+But that means 
+\begin_inset Formula $y$
+\end_inset
+
+ can't be divided by any of the known primes.
+ So it must be a new prime, not in the original list.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
-ss
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Euclid's Proof (300BC)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Both of these options tell us the original list of primes is incomplete.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+That that's the proof.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+No finite list of primes can be a complete list of primes.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So there are infinitely many primes.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
-ss
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Proof By Contradition
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Normal Proof
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+valid assumptions 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ valid logical steps 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ valid conclusion
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Proof By Contradiction
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+invalid
+\series default
+ assumptions 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ valid logical step 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\series bold
+invalid
+\series default
+ conclusion
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
 \end_layout
 
 \begin_layout Frame
-ss
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+A Common Misunderstanding
 \end_layout
 
-\begin_layout Frame
-s
+\end_inset
+
+
 \end_layout
 
-\begin_layout Frame
-ss
+\begin_deeper
+\begin_layout Itemize
+It's easy to think that 
+\begin_inset Formula $p_{1}\cdot p_{2}\cdot p_{3}\cdot p_{4}\cdot\ldots\cdot p_{n}+1$
+\end_inset
+
+ is a way of generating primes.
+ This is wrong.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
 \end_layout
 
-\begin_layout Frame
-Proof By Contradiction pictre
+\end_inset
+
+
 \end_layout
 
+\begin_layout Itemize
+The proof only asks 
+\series bold
+what happens if
+\series default
+ we say 
+\begin_inset Formula $p_{1}\cdot p_{2}\cdot p_{3}\cdot p_{4}\cdot\ldots\cdot p_{n}+1$
+\end_inset
+
+ is a prime, assuming a limited list of primes 
+\begin_inset Formula $p_{1},p_{2},p_{3},p_{4}\ldots p_{n}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can easily prove 
+\begin_inset Formula $p_{1}\cdot p_{2}\cdot p_{3}\cdot p_{4}\cdot\ldots\cdot p_{n}+1$
+\end_inset
+
+ is not always prime with just one 
+\series bold
+counterexample
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $2\cdot3\cdot5\cdot7\cdot11\cdot13+1=30031$
+\end_inset
+
+ which is not prime because 
+\begin_inset Formula $30031=59\times509$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document
