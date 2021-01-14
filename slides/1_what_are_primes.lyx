@@ -9,13 +9,14 @@
 \usetheme{Madrid}
 
 \setbeamertemplate{itemize items}[circle]
-\setbeamertemplate{itemize subitem}[default]
-%\setbeamertemplate{enumerate items}[default]
-
-%\setbeamercolor{background canvas}{bg=lightgray!30}
+\setbeamertemplate{itemize subitem}[circle]
 
 \definecolor{MyBackground}{rgb}{1.0000,0.95,0.85}
 \setbeamercolor{background canvas}{bg=MyBackground}
+
+\definecolor{MyBullets}{rgb}{0.0,0.0,0.90}
+\setbeamercolor{itemize item}{fg=MyBullets}
+\setbeamercolor{itemize subitem}{fg=MyBullets!40}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
