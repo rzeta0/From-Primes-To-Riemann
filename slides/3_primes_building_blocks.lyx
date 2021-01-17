@@ -92,7 +92,7 @@
 \begin_body
 
 \begin_layout Title
-What Is A Prime?
+Primes Are The Building Blocks Of Numbers
 \end_layout
 
 \begin_layout Subtitle
@@ -108,7 +108,7 @@ Tariq Rashid
 status open
 
 \begin_layout Plain Layout
-Counting Numbers
+Breaking A Number Into Its Factors
 \end_layout
 
 \end_inset
@@ -116,46 +116,16 @@ Counting Numbers
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Formula 
-\[
-1,2,3,4,5,6,7,8,\ldots
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
+\begin_deeper
+\begin_layout Itemize
+Let's think about the number 12 and its factors.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Multiplication
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
 \begin_inset Formula 
 \begin{align*}
-2\times4 & =8\\
-5\times5 & =25
+12 & =2\times6\\
+12 & =3\times4
 \end{align*}
 
 \end_inset
@@ -163,51 +133,15 @@ Multiplication
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Factors & Products
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-3\times4=12
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-3 and 4 are 
-\series bold
-factors
-\end_layout
-
-\begin_layout Itemize
-12 is a 
-\series bold
-product
-\end_layout
-
 \end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -220,19 +154,8 @@ product
 status open
 
 \begin_layout Plain Layout
-Multiplying Whole Numbers
+Breaking A Number Into Its Factors
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-a\times b=c
-\]
 
 \end_inset
 
@@ -241,290 +164,20 @@ a\times b=c
 
 \begin_deeper
 \begin_layout Itemize
-if 
-\begin_inset Formula $a$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
- are whole numbers, so is 
-\begin_inset Formula $c$
-\end_inset
-
-
+That 6 can be broken down further.
+ So can that 4.
 \end_layout
 
-\end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-An Innocent Question
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
 \begin_inset Formula 
-\[
-a\times b=c
-\]
+\begin{align*}
+12 & =2\times(3\times2)\\
+12 & =3\times(2\times2)
+\end{align*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $a$
-\end_inset
-
- and 
-\begin_inset Formula $b$
-\end_inset
-
- can be any counting number we feel like choosing
-\end_layout
-
-\begin_layout Itemize
-does 
-\begin_inset Formula $c$
-\end_inset
-
- have this freedom too?
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-An Innocent Question
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-a\times b=12
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $a=3$
-\end_inset
-
-, 
-\begin_inset Formula $b=4$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a=2$
-\end_inset
-
-, 
-\begin_inset Formula $b=6$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-An Innocent Question
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-a\times b=100
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $a=2$
-\end_inset
-
-, 
-\begin_inset Formula $b=50$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $a=10$
-\end_inset
-
-, 
-\begin_inset Formula $b=10$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-An Innocent Question
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-a\times b=7
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $a=?$
-\end_inset
-
-, 
-\begin_inset Formula $b=?$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-no solutions !
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-An Innocent Question
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-a\times b=11
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-\begin_inset Formula $a=?$
-\end_inset
-
-, 
-\begin_inset Formula $b=?$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-no solutions !
 \begin_inset ERT
 status open
 
@@ -541,9 +194,355 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-These numbers 7 and 11 are 
+Can't break these down any further 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ prime.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Breaking A Number Into Its Factors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If we order those factors by size, we can see the lists are the 
 \series bold
-prime numbers
+same
+\series default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+12 & =2\times2\times3\\
+12 & =2\times2\times3
+\end{align*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Perhaps every number has a 
+\series bold
+unique
+\series default
+ breakdown of factors ...
+ like DNA is unique to people?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Fundamental Theorem of Arithmetic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Proof part 1: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Show any number can be broken down into a list of 
+\series bold
+factors that are all prime
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Proof part 2:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Show this list of primes is 
+\series bold
+unique
+\series default
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+FTA Part 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Imagine a counting number 
+\begin_inset Formula $N$
+\end_inset
+
+, and write it as a product of factors.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N=f_{1}\cdot f_{2}\cdot f_{3}\cdot\ldots\cdot f_{n}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Looking at each factor in turn, if it isn't prime we can break it down into
+ smaller factors.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+FTA Part 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ might be broken down as 
+\begin_inset Formula $f_{1}=g_{1}\cdot g_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ might be prime 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+N & =f_{1}\cdot f_{2}\cdot f_{3}\cdot\ldots\cdot f_{n}\\
+ & =(g_{1}\cdot g_{2})\cdot p_{1}\cdot(g_{3}\cdot g_{4}\cdot g_{5})\cdot\ldots\cdot(g_{x}\cdot g_{y})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+FTA Part 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We can keep repeating this process of breaking down numbers into smaller
+ factors.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We only stop when we can't break numbers down further 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\series bold
+when they're all prime
 \series default
 .
 \end_layout
@@ -561,7 +560,7 @@ prime numbers
 status open
 
 \begin_layout Plain Layout
-Prime Numbers
+FTA Part 1
 \end_layout
 
 \end_inset
@@ -569,17 +568,35 @@ Prime Numbers
 
 \end_layout
 
-\begin_layout Frame
-\begin_inset Formula 
-\[
-2,3,5,7,11,13,19,23,29,31,37,41,43,47,53,\ldots
-\]
+\begin_deeper
+\begin_layout Itemize
+Let's try this proceess with an example number, 720.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/blog/prime_factorisation_colour.png
+	height 50line%
 
 \end_inset
 
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -592,19 +609,8 @@ Prime Numbers
 status open
 
 \begin_layout Plain Layout
-What About 1?
+FTA Part 2
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\[
-1\times7=7
-\]
 
 \end_inset
 
@@ -613,7 +619,11 @@ What About 1?
 
 \begin_deeper
 \begin_layout Itemize
-We exclude 1 as a legitimate factor.
+Imagine 
+\begin_inset Formula $N$
+\end_inset
+
+ can be written as a product of primes in two different ways.
 \begin_inset ERT
 status open
 
@@ -629,52 +639,36 @@ bigskip
 
 \end_layout
 
-\begin_layout Itemize
-If we didn't, there would be no prime numbers because every number would
- have a factor of 1
-\end_layout
-
-\end_deeper
 \begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-What About 1?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Even worse...
-\end_layout
-
-\end_deeper
-\begin_layout Frame
 \begin_inset Formula 
 \begin{align*}
-12 & =3\times4\\
-12 & =3\times4\times1\\
-12 & =3\times4\times1\times1\times1\times1\\
-12 & =3\times4\times1\times1\times1\times1\times1\times1\times\ldots
+N & =p_{1}\cdot p_{2}\cdot p_{3}\cdot\ldots\cdot p_{a}\\
+N & =q_{1}\cdot q_{2}\cdot q_{3}\cdot\ldots\cdot q_{a}\cdot q_{b}\cdot q_{c}\cdot q_{d}
 \end{align*}
 
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For generality, that second list is longer than the first.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
 \end_inset
@@ -687,24 +681,7 @@ Even worse...
 status open
 
 \begin_layout Plain Layout
-Negative Primes?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-History:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
+FTA Part 2
 \end_layout
 
 \end_inset
@@ -714,7 +691,39 @@ bigskip
 
 \begin_deeper
 \begin_layout Itemize
-prime numbers were known about and discussed in ancient times ...
+If 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+ is a factor of 
+\begin_inset Formula $N$
+\end_inset
+
+ from the first list, then it must be in the second list too.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cancel{p_{1}}\cdot p_{2}\cdot p_{3}\cdot\ldots\cdot p_{a}=\cancel{q_{1}}\cdot q_{2}\cdot q_{3}\cdot\ldots\cdot q_{a}\cdot q_{b}\cdot q_{c}\cdot q_{d}
+\]
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
@@ -731,12 +740,156 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-..
- before the idea of a 
+We can repeat the same logic.
+ If 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+ is a fctor of 
+\begin_inset Formula $N$
+\end_inset
+
+ then it must be in the second list.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cancel{p_{1}}\cdot\cancel{p_{2}}\cdot p_{3}\cdot\ldots\cdot p_{a}=\cancel{q_{1}}\cdot\cancel{q_{2}}\cdot q_{3}\cdot\ldots\cdot q_{a}\cdot q_{b}\cdot q_{c}\cdot q_{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+FTA Part 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We can repeat the process until we've cancelled all the prime factors in
+ the shorter first list.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cancel{p_{1}}\cdot\cancel{p_{2}}\cdot\cancel{p_{3}}\cdot\ldots\cdot\cancel{p_{a}}=\cancel{q_{1}}\cdot\cancel{q_{2}}\cdot\cancel{q_{3}}\cdot\ldots\cdot\cancel{q_{a}}\cdot q_{b}\cdot q_{c}\cdot q_{d}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can simply this.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1=q_{b}\cdot q_{c}\cdot q_{d}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+All the remaining factors 
+\begin_inset Formula $q$
+\end_inset
+
+ are 1.
+ So the 
 \series bold
-negative number
-\series default
- was accepted
+two lists are equal.
 \end_layout
 
 \end_deeper
@@ -752,24 +905,8 @@ negative number
 status open
 
 \begin_layout Plain Layout
-Apparent Randomness
+FTA Summary
 \end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Formula 
-\begin{align*}
- & 2,3,5,7,11,13,17,19,23,29\\
- & 31,37,41,43,47,53,59,61,67,71\\
- & 73,79,83,89,97,101,103,107,109,113\\
- & 127,131,137,139,149,151,157,163,167,173\\
- & 179,181,191,193,197,199,211,223,227,229\\
- & 233,239,241,251,257,263,269,271,277,281
-\end{align*}
 
 \end_inset
 
@@ -777,12 +914,31 @@ Apparent Randomness
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-No apparent pattern 
-\begin_inset Formula $\rightarrow$
+\begin_layout Enumerate
+Any whole number 
+\begin_inset Formula $N>1$
 \end_inset
 
- hard to predict next prime
+ can be broken down into a list of prime factors.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+...
+ and that list of primes is unique to that number.
 \end_layout
 
 \end_deeper

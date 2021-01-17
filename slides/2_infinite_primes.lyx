@@ -10,6 +10,7 @@
 
 \setbeamertemplate{itemize items}[circle]
 \setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{enumerate items}[default]
 
 \definecolor{MyBackground}{rgb}{1.0000,0.95,0.85}
 \setbeamercolor{background canvas}{bg=MyBackground}
