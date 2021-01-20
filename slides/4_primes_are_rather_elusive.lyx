@@ -557,7 +557,7 @@ Let's collect all those
 \end_inset
 
  terms and call them 
-\begin_inset Formula $X$
+\begin_inset Formula $p_{1}\cdot X$
 \end_inset
 
 
@@ -739,7 +739,7 @@ Stronger Proof Than Intended
 
 \begin_deeper
 \begin_layout Itemize
-We wannted to prove
+We wanted to prove
 \end_layout
 
 \begin_deeper
