@@ -566,7 +566,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\sin(x)=x\cdot\left[1+\frac{x^{2}}{\pi^{2}}\left(\frac{1}{1^{2}}+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\ldots\right)+X\right]
+\sin(x)=x\cdot\left[1-\frac{x^{2}}{\pi^{2}}\left(\frac{1}{1^{2}}+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\ldots\right)+X\right]
 \]
 
 \end_inset
