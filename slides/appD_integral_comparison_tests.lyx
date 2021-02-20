@@ -136,7 +136,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\sum\frac{1}{x}\text{  compared with  }\int\frac{1}{x}dx
+\sum\frac{1}{x}\text{ compared with }\int\frac{1}{x}dx
 \]
 
 \end_inset
@@ -159,387 +159,6 @@ bigskip
 
 \begin_layout Itemize
 Simple but powerful technique used a lot in number theory.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Of 
-\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename /Users/tariq/Desktop/primes_riemann/blog/appD_graph_1:xs.pdf
-	height 65theight%
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-graph of 
-\begin_inset Formula $y=\frac{1}{x^{s}}$
-\end_inset
-
-, with rectangles representing the fractions 
-\begin_inset Formula $\frac{1}{x^{s}}$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Of 
-\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Looking at 
-\begin_inset Formula $1\leq x\leq4$
-\end_inset
-
-, area of three pink rectangles is 
-\series bold
-less
-\series default
- than the area under curve 
-\begin_inset Formula $\int_{1}^{4}\frac{1}{x^{s}}dx$
-\end_inset
-
-.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-By extending range to 
-\begin_inset Formula $1\leq x\leq k$
-\end_inset
-
-, we can make a general observation.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{2}^{k}\frac{1}{x^{s}}<\int_{1}^{k}\frac{1}{x^{s}}dx
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Of 
-\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Sum starts at 2 because we're looking at rectangles extending to the left
- of a given 
-\begin_inset Formula $x$
-\end_inset
-
-.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-We can adjust the limit of the sum using 
-\begin_inset Formula $\sum_{1}^{k}\frac{1}{x^{s}}=1+\sum_{2}^{k}\frac{1}{x^{s}}$
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{1}^{k}\frac{1}{x^{s}}-1<\int_{1}^{k}\frac{1}{x^{s}}dx
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Of 
-\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The integral is easily evaluated.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{1}^{k}\frac{1}{x^{s}}-1<\frac{k^{1-s}-1}{1-s}
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Looking at the denominator, 
-\begin_inset Formula $s\neq1$
-\end_inset
-
-.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Looking at the numerator, only way 
-\begin_inset Formula $k^{1-s}$
-\end_inset
-
- won't diverge as 
-\begin_inset Formula $k\rightarrow\infty$
-\end_inset
-
- is if 
-\begin_inset Formula $1-s<0$
-\end_inset
-
-.
- That is, 
-\begin_inset Formula $s>1$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Of 
-\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-Riemann Zeta
-\series default
- function 
-\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
-\end_inset
-
- only converges for 
-\begin_inset Formula $s>1$
-\end_inset
-
-.
 \end_layout
 
 \end_deeper
@@ -1087,6 +706,735 @@ status open
 
 \begin_layout Itemize
 Caution - experimental evidence isn't proof.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/blog/appD_graph_1:xs.pdf
+	height 65theight%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+graph of 
+\begin_inset Formula $y=\frac{1}{x^{s}}$
+\end_inset
+
+, with rectangles representing the fractions 
+\begin_inset Formula $\frac{1}{x^{s}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Shape assumes 
+\begin_inset Formula $s>0$
+\end_inset
+
+, easy to see 
+\begin_inset Formula $\sum1/n^{s}$
+\end_inset
+
+ diverges if 
+\begin_inset Formula $s\leq0$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Looking at 
+\begin_inset Formula $1\leq x\leq4$
+\end_inset
+
+, area of three shorter rectangles is 
+\series bold
+less
+\series default
+ than the area under curve 
+\begin_inset Formula $\int_{1}^{4}\frac{1}{x^{s}}dx$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+By extending range to 
+\begin_inset Formula $1\leq x\leq k$
+\end_inset
+
+, we can make a general observation.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{2}^{k}\frac{1}{x^{s}}<\int_{1}^{k}\frac{1}{x^{s}}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sum starts at 2 because we're looking at rectangles extending to the left
+ of a given 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can adjust the limit of the sum using 
+\begin_inset Formula $\sum_{1}^{k}\frac{1}{x^{s}}=1+\sum_{2}^{k}\frac{1}{x^{s}}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{1}^{k}\frac{1}{x^{s}}-1<\int_{1}^{k}\frac{1}{x^{s}}dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The integral is easily evaluated.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{1}^{k}\frac{1}{x^{s}}-1<\frac{k^{1-s}-1}{1-s}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Only way 
+\begin_inset Formula $k^{1-s}$
+\end_inset
+
+ won't diverge as 
+\begin_inset Formula $k\rightarrow\infty$
+\end_inset
+
+ is if 
+\begin_inset Formula $1-s<0$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sum 
+\series bold
+convergenes
+\series default
+ when 
+\begin_inset Formula $s>1$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Possibility the sum might also converge for some 
+\begin_inset Formula $s\leq1$
+\end_inset
+
+?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Looking at 
+\begin_inset Formula $1\leq x\leq4$
+\end_inset
+
+, area of three taller rectangles is 
+\series bold
+more
+\series default
+ than the area under curve 
+\begin_inset Formula $\int_{1}^{4}\frac{1}{x^{s}}dx$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+By extending range to 
+\begin_inset Formula $1\leq x\leq k$
+\end_inset
+
+, we can make a general observation.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{1}^{k}\frac{1}{x^{s}}<\int_{1}^{k+1}\frac{1}{x^{s}}dx
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Integral upper limit is 
+\begin_inset Formula $k+1$
+\end_inset
+
+ because we're looking at rectangles extending to the right of a given 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The integral is easily evaluated.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{1}^{k}\frac{1}{x^{s}}>\frac{(k+1)^{1-s}-1}{1-s}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+As 
+\begin_inset Formula $k\rightarrow\infty$
+\end_inset
+
+, 
+\begin_inset Formula $(k+1)^{1-s}$
+\end_inset
+
+ 
+\series bold
+diverges
+\series default
+ when 
+\begin_inset Formula $s\leq1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sum 
+\begin_inset Formula $\sum1/x^{s}$
+\end_inset
+
+ also diverges when 
+\begin_inset Formula $s\leq1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We have now ruled out the possibility the sum might converge for some 
+\begin_inset Formula $s\leq1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Of 
+\begin_inset Formula $\zeta(s)=\sum1/n^{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Convergence of Riemann Zeta function
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\zeta(s)=\sum1/n^{s}\text{ only converges for }s>1}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The two inequalities give lower and upper bounds for 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\frac{1}{s-1}<\zeta(s)<\frac{1}{s-1}+1}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
