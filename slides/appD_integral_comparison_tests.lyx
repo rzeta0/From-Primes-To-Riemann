@@ -1173,7 +1173,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\sum_{1}^{k}\frac{1}{x^{s}}<\int_{1}^{k+1}\frac{1}{x^{s}}dx
+\sum_{1}^{k}\frac{1}{x^{s}}>\int_{1}^{k+1}\frac{1}{x^{s}}dx
 \]
 
 \end_inset
