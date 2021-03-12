@@ -264,7 +264,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Tests to check for convergence, the 
+Tests to check for convergence, eg the 
 \series bold
 ratio test
 \series default
@@ -616,7 +616,7 @@ where
 \begin_inset Formula $P$
 \end_inset
 
- is 
+ is finite and 
 \series bold
 non-zero
 \series default
@@ -720,7 +720,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\ln\prod a_{n}=\sum\ln a_{n}
+\log\prod a_{n}=\sum\log a_{n}
 \]
 
 \end_inset
@@ -968,7 +968,7 @@ bigskip
 \begin{align*}
 \prod_{n=2}^{N}\left(1-\frac{1}{n}\right) & =\prod_{n=2}^{N}\left(\frac{n-1}{n}\right)\\
 \\
- & =\frac{1}{\cancel{2}}\times\frac{\cancel{2}}{\cancel{3}}\times\frac{\cancel{3}}{\cancel{4}}\times\ldots\times\frac{\cancel{N+1}}{\cancel{N}}\\
+ & =\frac{1}{\cancel{2}}\times\frac{\cancel{2}}{\cancel{3}}\times\frac{\cancel{3}}{\cancel{4}}\times\ldots\times\frac{\cancel{N+1}}{N}\\
 \\
  & =\frac{1}{N}
 \end{align*}
