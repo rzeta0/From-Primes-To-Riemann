@@ -936,5 +936,1741 @@ We need something to help us with
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+First Result 
+\begin_inset Formula $\left|\log\zeta(s)-P(s)\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Start with Euler product formula
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\zeta(s)=\sum_{n}\frac{1}{n^{s}}=\prod_{n}\left(\frac{1}{1-p^{-s}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+And take logs, legitimate becacse 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+ converges for 
+\begin_inset Formula $s>1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log\zeta(s)=-\sum_{p}\log(1-p^{-s})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+First Result 
+\begin_inset Formula $\left|\log\zeta(s)-P(s)\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Use 
+\begin_inset Formula $\log(1+x)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\cdots$
+\end_inset
+
+ for 
+\begin_inset Formula $|x|<1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\log\zeta(s) & =\sum_{p}\sum_{k}\frac{1}{kp^{ks}}\\
+ & =P(s)+\sum_{p}\sum_{k\geq2}\frac{1}{kp^{ks}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We've isolated 
+\begin_inset Formula $P(s)=\sum1/p^{s}$
+\end_inset
+
+, a step in the right direction.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Since 
+\begin_inset Formula $s>1$
+\end_inset
+
+ and 
+\begin_inset Formula $k\geq2$
+\end_inset
+
+, we have 
+\begin_inset Formula $1/kp^{ks}\leq1/2p^{k}$
+\end_inset
+
+ so
+\begin_inset Formula 
+\[
+0<\sum_{p}\sum_{k\geq2}\frac{1}{kp^{ks}}\leq\frac{1}{2}\sum_{p}\sum_{k\geq2}\frac{1}{p^{k}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+First Result 
+\begin_inset Formula $\left|\log\zeta(s)-P(s)\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Also, since 
+\begin_inset Formula $(1-x)^{-1}=1+x+x^{2}+\ldots$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{p}\sum_{k\geq2}\frac{1}{kp^{ks}} & \leq\frac{1}{2}\sum_{p}\sum_{k\geq2}\frac{1}{p^{k}}\\
+ & =\frac{1}{2}\sum_{p}(\frac{1}{p^{2}}+\frac{1}{p^{3}}+\frac{1}{p^{4}}+\ldots)\\
+ & =\frac{1}{2}\sum_{p}\frac{1}{p}(\frac{1}{p}+\frac{1}{p^{2}}+\frac{1}{p^{3}}+\ldots)\\
+ & =\frac{1}{2}\sum_{p}\frac{1}{p}(-1+(1-\frac{1}{p})^{-1})\\
+ & =\frac{1}{2}\sum_{p}\frac{1}{p(p-1)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+First Result 
+\begin_inset Formula $\left|\log\zeta(s)-P(s)\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Since primes 
+\begin_inset Formula $p$
+\end_inset
+
+ are a subset of counting numbers 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{2}\sum_{p}\frac{1}{p(p-1)}<\frac{1}{2}\sum_{n\geq2}\frac{1}{n(n-1)}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Last step uses 
+\begin_inset Formula $\sum_{n\geq2}\frac{1}{n(n-1)}=\sum_{n\geq2}\frac{1}{n-1}-\frac{1}{n}=1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Difference between 
+\begin_inset Formula $\log\zeta(s)$
+\end_inset
+
+ the 
+\series bold
+prime zeta function
+\series default
+ 
+\begin_inset Formula $P(s)$
+\end_inset
+
+ is bounded.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{0<\log\zeta(s)-P(s)<\frac{1}{2}}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Not the prime harmonic series 
+\begin_inset Formula $\sum1/p$
+\end_inset
+
+ which would require 
+\begin_inset Formula $s=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Second Result 
+\begin_inset Formula $1<(s-1)\cdot\zeta(s)<s$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We have previously used integreal tests to find:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{s-1}<\zeta(s)<\frac{1}{s-1}+1
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Re-arranging
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{1<(s-1)\cdot\zeta(s)<s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Third Result 
+\begin_inset Formula $\left|P(s+1)-\log\frac{1}{s}\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First result, for 
+\begin_inset Formula $s>1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0<\log\zeta(s)-P(s)<\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Restricting 
+\begin_inset Formula $0<s<\frac{1}{2}$
+\end_inset
+
+, we have to rewrite 
+\begin_inset Formula $s$
+\end_inset
+
+ to 
+\begin_inset Formula $s+1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{1}{2}<P(s+1)-\log\zeta(s+1)<0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Third Result 
+\begin_inset Formula $\left|P(s+1)-\log\frac{1}{s}\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Second result, for 
+\begin_inset Formula $s>1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1<(s-1)\cdot\zeta(s)<s
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Restricting 
+\begin_inset Formula $0<s<\frac{1}{2}$
+\end_inset
+
+, and rewriting 
+\begin_inset Formula $s$
+\end_inset
+
+ to 
+\begin_inset Formula $s+1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1<s\cdot\zeta(s+1)<\frac{3}{2}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Taking logarithms
+\begin_inset Formula 
+\[
+0<\log\zeta(s+1)-\log\frac{1}{s}<\log\frac{3}{2}<\frac{1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Third Result 
+\begin_inset Formula $\left|P(s+1)-\log\frac{1}{s}\right|<\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Adding these two inequalities
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{1}{2}<P(s+1)-\log\frac{1}{s}<\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{|P(s+1)-\log\frac{1}{s}|<\frac{1}{2}}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $0<s<\frac{1}{2}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This can help with 
+\begin_inset Formula $S(\lambda,x)=\alpha\cdot P(1+\frac{1}{\log x})+\beta\cdot P(1+\frac{2}{\log x})$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Linear Forms For 
+\begin_inset Formula $\lambda_{U},\lambda_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S(\lambda,x)=\alpha\cdot P(1+\frac{1}{\log x})+\beta\cdot P(1+\frac{2}{\log x})
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Before we apply the third result, we need to ensure 
+\begin_inset Formula $0<s<\frac{1}{2}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+That is, 
+\begin_inset Formula $\frac{2}{\log x}<\frac{1}{2}\implies x>e^{4}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Linear Forms For 
+\begin_inset Formula $\lambda_{U},\lambda_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+\begin_inset Formula 
+\begin{align*}
+-\frac{1}{2} & <P(1+\frac{1}{\log x})-\log\log x<\frac{1}{2}\\
+-\frac{1}{2} & <P(1+\frac{2}{\log x})-\log\log x+\log2<\frac{1}{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Multiply by 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+, noting they could be negative
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+-\frac{|\alpha|}{2} & <\alpha P(1+\frac{1}{\log x})-\alpha\log\log x<\frac{|\alpha|}{2}\\
+-\frac{|\beta|}{2} & <\beta P(1+\frac{2}{\log x})-\beta\log\log x+\beta\log2<\frac{|\beta|}{2}\\
+-\frac{|\alpha|}{2}-\frac{|\beta|}{2} & <S(\lambda,x)-\alpha\log\log x-\beta\log\log x+\beta\log2<\frac{|\alpha|}{2}+\frac{|\beta|}{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Linear Forms For 
+\begin_inset Formula $\lambda_{U},\lambda_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dealing with that 
+\begin_inset Formula $\beta\log2$
+\end_inset
+
+, following is true for both 
+\begin_inset Formula $\beta$
+\end_inset
+
+ positive or negative
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{|\alpha|}{2}-|\beta|(\frac{1}{2}+\log2)<S(\lambda,x)-\alpha\log\log x-\beta\log\log x<\frac{|\alpha|}{2}+|\beta|(\frac{1}{2}+\log2)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Using 
+\begin_inset Formula $\lambda(1)=\alpha+\beta$
+\end_inset
+
+ to simplify
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+-\frac{|\alpha|}{2}-|\beta|(\frac{1}{2}+\log2)<S(\lambda,x)-\lambda(1)\log\log x<\frac{|\alpha|}{2}+|\beta|(\frac{1}{2}+\log2)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\left|S(\lambda,x)-\lambda(1)\log\log x\right|<\frac{|\alpha|}{2}+|\beta|(\frac{1}{2}+\log2)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Two Specific Linear Forms For 
+\begin_inset Formula $\lambda_{U},\lambda_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Upper bound
+\begin_inset Formula 
+\[
+\lambda_{U}(t)=-et+(e+1)\geq\lambda_{0}(t)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Lower bound
+\begin_inset Formula 
+\[
+\lambda_{L}(t)=\frac{e}{e-1}t-\frac{1}{e-1}\geq\lambda_{0}(t)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note that for both 
+\begin_inset Formula $\alpha+\beta=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Two Specific Linear Forms For 
+\begin_inset Formula $\lambda_{U},\lambda_{L}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/blog/pollack2.pdf
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can see that 
+\begin_inset Formula $\lambda_{L}\leq\lambda_{0}\leq\lambda_{U}$
+\end_inset
+
+ for 
+\begin_inset Formula $t\in[0,1]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Upper Bound For 
+\begin_inset Formula $\sum_{p\leq x}1/p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Since 
+\begin_inset Formula $\lambda_{U}(t)\geq\lambda_{0}(t)$
+\end_inset
+
+ we can say 
+\begin_inset Formula $S(\lambda_{U},x)\geq S(\lambda_{0},x)=\sum_{p\leq x}1/p$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{p\leq x}\frac{1}{p} & <\log\log x+\frac{|\alpha|}{2}+|\beta|(\frac{1}{2}+\log2)\\
+ & =\log\log x+\frac{e+1}{2}+e(\frac{1}{2}+\log2)\\
+\sum_{p\leq x}\frac{1}{p} & <\log\log x+6
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lower Bound For 
+\begin_inset Formula $\sum_{p\leq x}1/p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Since 
+\begin_inset Formula $\lambda_{L}(t)\leq\lambda_{0}(t)$
+\end_inset
+
+ we can say 
+\begin_inset Formula $S(\lambda_{L},x)\leq S(\lambda_{0},x)=\sum_{p\leq x}1/p$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{p\leq x}\frac{1}{p} & >\log\log x-\frac{|\alpha|}{2}-|\beta|(\frac{1}{2}+\log2)\\
+ & =\log\log x+\frac{e+1}{2}+e(\frac{1}{2}+\log2)\\
+\sum_{p\leq x}\frac{1}{p} & >\log\log x+3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Lower & Upper Bounds For 
+\begin_inset Formula $\sum_{p\leq x}1/p$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Putting all this together
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\log\log x+3<\sum_{p\leq x}\frac{1}{p}<\log\log x+6
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Finaly we can say
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum_{p\leq x}\frac{1}{p}\text{ grows like }\log\log x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Visualising 
+\begin_inset Formula $\sum_{p\leq x}1/p$
+\end_inset
+
+ and 
+\begin_inset Formula $\log\log x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout LyX-Code
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/blog/pollack_llx.png
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Interesting that the differences appears 
+\begin_inset Formula $\rightarrow\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thoughts
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\sum_{p\leq x}1/p$
+\end_inset
+
+ grows very very slowly ...
+ and still diverges!
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\log x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\log\log x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.30
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.83
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.91
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.93
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,000,000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.82
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.63
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,000,000,000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.03
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,000,000,000,000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27.63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.32
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
 \end_body
 \end_document
