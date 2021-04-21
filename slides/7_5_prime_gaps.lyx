@@ -732,10 +732,10 @@ bigskip
 \end_deeper
 \begin_layout Itemize
 Note: prime gap is defined as 
-\begin_inset Formula $g(n)=p_{n+1}-p_{n},$
+\begin_inset Formula $g(p_{n})=p_{n+1}-p_{n},$
 \end_inset
 
- so prime gap for 3 is 5, not 1.
+ so prime gap for 3 is 2, not 1.
 \end_layout
 
 \end_deeper
@@ -783,7 +783,7 @@ These
 \series bold
 twin primes
 \series default
- so seem to pop up more often than expected:
+ do seem to pop up more often than expected:
 \begin_inset ERT
 status open
 
