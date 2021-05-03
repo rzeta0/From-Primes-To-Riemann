@@ -400,7 +400,7 @@ bigskip
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Pr\left(g(n)=4\right)=\left(1-\frac{1}{\ln(n)}\right)^{3}\cdot\left(\frac{1}{\ln(n)}\right)^{2}
+\left(1-\frac{1}{\ln(n)}\right)^{3}\cdot\left(\frac{1}{\ln(n)}\right)^{2}
 \]
 
 \end_inset
@@ -445,7 +445,7 @@ bigskip
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\Pr\left(g(n)=k\right)=\left(1-\frac{1}{\ln(n)}\right)^{k-1}\cdot\left(\frac{1}{\ln(n)}\right)^{2}
+\left(1-\frac{1}{\ln(n)}\right)^{k-1}\cdot\left(\frac{1}{\ln(n)}\right)^{2}
 \]
 
 \end_inset
@@ -488,11 +488,7 @@ Expected
 \begin_inset Formula $N$
 \end_inset
 
- numbers is 
-\begin_inset Formula $N\cdot\Pr\left(g(n)=k\right)$
-\end_inset
-
-
+ numbers is approximately
 \begin_inset ERT
 status open
 
@@ -506,9 +502,12 @@ bigskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
-N\cdot\left(1-\frac{1}{\ln(N)}\right)^{k-1}\cdot\left(\frac{1}{\ln(N)}\right)^{2}
+\sum_{n}^{N}\left(1-\frac{1}{\ln(n)}\right)^{k-1}\cdot\left(\frac{1}{\ln(n)}\right)^{2}
 \]
 
 \end_inset
@@ -530,7 +529,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-This uses approximation that for most 
+For most 
 \begin_inset Formula $n$
 \end_inset
 
@@ -542,7 +541,28 @@ This uses approximation that for most
 \begin_inset Formula $\ln(n)\approx\ln(N)$
 \end_inset
 
-.
+, so probability simplifies
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+N\cdot\left(1-\frac{1}{\ln(N)}\right)^{k-1}\cdot\left(\frac{1}{\ln(N)}\right)^{2}
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -886,11 +906,11 @@ A coin-tossing experiment would give us a linear log count of Head or Tail
 
 \begin_deeper
 \begin_layout Itemize
-suggests occurence of primes looks 
+suggests occurence of primes approximately mimics independent 
 \begin_inset Quotes eld
 \end_inset
 
-random
+random events
 \begin_inset Quotes erd
 \end_inset
 
@@ -917,6 +937,64 @@ The order-of-magnitude suggests the PNT based
 \end_inset
 
  probabilty is about right.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Compare to Coin Tosses
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/blog/coin_tosses.pdf
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.desmos.com/calculator/zyyiczghuy
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
