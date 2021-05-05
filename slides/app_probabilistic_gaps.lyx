@@ -108,6 +108,50 @@ Tariq Rashid
 status open
 
 \begin_layout Plain Layout
+Previously...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/part_1/prime_gaps.pdf
+	width 90text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Probabilistic Models Of Primes
 \end_layout
 
@@ -279,11 +323,7 @@ A prime gap at
 \begin_inset Formula $n$
 \end_inset
 
- of size 
-\begin_inset Formula $g(n)=4$
-\end_inset
-
- is a sequence
+ of size 4 is a sequence
 \begin_inset ERT
 status open
 
@@ -756,7 +796,7 @@ but also preserve PNT density of primes is
 
 \begin_layout Itemize
 we can double 
-\begin_inset Formula $\Pr(\text{even})$
+\begin_inset Formula $\Pr(\text{odd})$
 \end_inset
 
  to 
@@ -788,7 +828,7 @@ Same method, but applied to
  numbers, gives expected gaps
 \begin_inset Formula 
 \[
-\frac{N}{2}\cdot\left(1-\frac{2}{\ln(N)}\right)^{k-1}\cdot\left(\frac{2}{\ln(N)}\right)^{2}
+\frac{N}{2}\cdot\left(1-\frac{2}{\ln(N)}\right)^{\frac{k}{2}-1}\cdot\left(\frac{2}{\ln(N)}\right)^{2}
 \]
 
 \end_inset
@@ -965,7 +1005,7 @@ Compare to Coin Tosses
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
