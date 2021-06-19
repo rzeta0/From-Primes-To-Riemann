@@ -827,8 +827,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename /Users/tariq/Desktop/primes_riemann/part_2/rzeta_3d.pdf
-	width 90text%
+	filename /Users/tariq/Desktop/primes_riemann/blog/rzeta_3d_blog.pdf
+	width 95text%
 
 \end_inset
 
@@ -1085,7 +1085,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename /Users/tariq/Desktop/primes_riemann/part_2/rzeta_2d.pdf
-	width 90text%
+	width 95text%
 
 \end_inset
 
