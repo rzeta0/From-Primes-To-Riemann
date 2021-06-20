@@ -768,66 +768,378 @@ Deriving An Integral Form
 
 \begin_deeper
 \begin_layout Itemize
-Using triangle inequality and 
-\begin_inset Formula $\left|B(x)\right|\leq M$
-\end_inset
-
-.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\left|\sum_{x_{1}<n\leq x_{2}}\frac{a_{n}}{n^{s}}\right| & \leq\left|\frac{B(x_{2})}{x_{2}^{s-s_{0}}}\right|+\left|\frac{B(x_{1})}{x_{1}^{s-s_{0}}}\right|+\left|(s-s_{0})\int_{x_{1}}^{x_{2}}\frac{B(t)}{t^{s-s_{0}+1}}dt\right|\\
-\\
- & \leq Mx_{2}^{\sigma_{0}-\sigma}+Mx_{1}^{\sigma_{0}-\sigma}+\left|s-s_{0}\right|M\int_{x_{1}}^{x_{2}}t^{\sigma_{0}-\sigma-1}dt
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Abscissa of Convergence
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
 Using 
-\begin_inset Formula $Mx_{2}^{\sigma_{0}-\sigma}+Mx_{1}^{\sigma_{0}-\sigma}<2Mx_{1}^{\sigma_{0}-\sigma}$
+\begin_inset Formula $A(t)=A(x_{1})$
 \end_inset
 
- for 
-\begin_inset Formula $\sigma>\sigma_{0}$
+ over 
+\begin_inset Formula $[x_{1},m_{1}+1)$
+\end_inset
+
+, and 
+\begin_inset Formula $A(t)=A(x_{2})$
+\end_inset
+
+ over 
+\begin_inset Formula $[m_{2},x_{2}]$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\begin{align*}
+-\int_{m_{1}+1}^{m_{2}}A(t)f'(t)dt & =\int_{x_{1}}^{m_{1}+1}A(t)f'(t)dt+\int_{m_{2}}^{x_{2}}A(t)f'(t)dt\\
+\\
+ & -\int_{x_{1}}^{x_{2}}A(t)f'(t)dt\\
+\\
+ & =A(x_{1})\left[f(m_{1}+1)-f(x_{1})\right]+A(x_{2})\left[f(x_{2})-f(m_{2})\right]\\
+\\
+ & -\int_{x_{1}}^{x_{2}}A(t)f'(t)dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Deriving An Integral Form
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We plug this integral back into our object, then use 
+\begin_inset Formula $A(m_{1})=A(x_{1})$
+\end_inset
+
+ and 
+\begin_inset Formula $A(m_{2})=A(x_{2})$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{x_{1}<n\leq x_{2}}a(n)f(n) & =A(x_{2})f(m_{2})-A(x_{1})f(m_{1}+1)\\
+\\
+ & +A(x_{1})\left[f(m_{1}+1)-f(x_{1})\right]+A(x_{2})\left[f(x_{2})-f(m_{2})\right]\\
+\\
+ & -\int_{x_{1}}^{x_{2}}A(t)f'(t)dt
+\end{align*}
+
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Many of these terms cancel out, leaving us with the 
+\series bold
+Abel Identity
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\boxed{\sum_{x_{1}<n\leq x_{2}}a(n)f(n)=A(x_{2})f(x_{2})-A(x_{1})f(x_{1})-\int_{x_{1}}^{x_{2}}A(t)f'(t)dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example: Growth of 
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Abel's identity 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ asymptotic behaviour of discrete functions.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let's use it to explore how the harmonic series 
+\begin_inset Formula $\sum_{1}^{N}1/n$
+\end_inset
+
+ grows.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can choose 
+\begin_inset Formula $a(n)=1$
+\end_inset
+
+ and 
+\begin_inset Formula $f(x)=1/x$
+\end_inset
+
+, which means 
+\begin_inset Formula $A(x)=\left\lfloor x\right\rfloor $
+\end_inset
+
+ and 
+\begin_inset Formula $f'(x)=-1/x^{2}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{0<n\leq N}\frac{1}{n} & =1+\sum_{1<n\leq N}\frac{1}{n}\\
+\\
+ & =1+A(N)f(N)-A(1)f(1)-\int_{1}^{N}A(t)f't)dt\\
+\\
+ & =1+\frac{N}{N}-\frac{1}{1}+\int_{1}^{N}\frac{t-\{t\}}{t^{2}}dt
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example: Growth of 
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We've written 
+\begin_inset Formula $\left\lfloor t\right\rfloor $
+\end_inset
+
+ as 
+\begin_inset Formula $t-\{t\}$
+\end_inset
+
+, where 
+\begin_inset Formula $\{t\}$
+\end_inset
+
+ is the fractional part of 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ This lets us split the integral into manageable parts.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{0<n\leq N}\frac{1}{n}=1+\int_{1}^{N}\frac{1}{t}dt-\int_{1}^{N}\frac{\{t\}}{t^{2}}dt
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Because 
+\begin_inset Formula $\{t\}$
+\end_inset
+
+ is only ever in the range 
+\begin_inset Formula $[0,1)$
+\end_inset
+
+, the last integral is always less than 
+\begin_inset Formula $\int_{1}^{N}1/t^{2}dt$
+\end_inset
+
+, that is, 
+\begin_inset Formula $O\left(\int_{1}^{N}1/t^{2}dt\right)$
 \end_inset
 
 .
@@ -846,104 +1158,13 @@ bigskip
 
 \begin_inset Formula 
 \begin{align*}
-\left|\sum_{x_{1}<n\leq x_{2}}\frac{a_{n}}{n^{s}}\right| & \leq2Mx_{1}^{\sigma_{0}-\sigma}+\left|s-s_{0}\right|M\left|\frac{x_{2}^{\sigma_{0}-\sigma}-x_{1}^{\sigma_{0}-\sigma}}{\sigma_{0}-\sigma}\right|\\
-\\
- & \le2Mx_{1}^{\sigma_{0}-\sigma}\left(1+\frac{\left|s-s_{0}\right|}{\sigma-\sigma_{0}}\right)
+\sum_{0<n\leq N}\frac{1}{n} & =1+\ln(N)-O\left(1-\frac{1}{N}\right)\\
+ & =\ln(N)+O\left(1\right)
 \end{align*}
 
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Last step uses 
-\size small
-
-\begin_inset Formula $\left|x_{2}^{\sigma_{0}-\sigma}-x_{1}^{\sigma_{0}-\sigma}\right|=\left|x_{1}^{\sigma_{0}-\sigma}-x_{2}^{\sigma_{0}-\sigma}\right|<x_{1}^{\sigma_{0}-\sigma}<2x_{1}^{\sigma_{0}-\sigma}$
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Abscissa of Convergence
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The key point is that 
-\begin_inset Formula $\sum_{x_{1}<n\leq x_{2}}a_{n}/n^{s}$
-\end_inset
-
- is bounded if 
-\begin_inset Formula $\sum_{n\leq x}a_{n}/n^{s_{0}}$
-\end_inset
-
- is bounded, where 
-\begin_inset Formula $\sigma>\sigma_{0}$
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Let's see if we can push this result about 
-\series bold
-boundedness
-\series default
- to 
-\series bold
-convergence
-\series default
-.
 \end_layout
 
 \end_deeper
@@ -959,7 +1180,11 @@ convergence
 status open
 
 \begin_layout Plain Layout
-Abscissa of Convergence
+Example: Growth of 
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -968,37 +1193,13 @@ Abscissa of Convergence
 \end_layout
 
 \begin_deeper
-\begin_layout Quote
-\begin_inset Formula 
-\[
-\left|\sum_{x_{1}<n\leq x_{2}}\frac{a_{n}}{n^{s}}\right|\le2Mx_{1}^{\sigma_{0}-\sigma}\left(1+\frac{\left|s-s_{0}\right|}{\sigma-\sigma_{0}}\right)=Kx_{1}^{\sigma_{0}-\sigma}
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Itemize
-Here 
-\begin_inset Formula $K$
+This tells us the harmonic series 
+\begin_inset Formula $\sum_{1}^{N}1/n$
 \end_inset
 
- doesn't depend on 
-\begin_inset Formula $x_{1}$
+ grows like 
+\begin_inset Formula $\ln(N)$
 \end_inset
 
 .
@@ -1019,371 +1220,33 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-If we let 
-\begin_inset Formula $x_{1}\rightarrow\infty$
-\end_inset
-
- then 
-\begin_inset Formula $Kx_{1}^{\sigma_{0}-\sigma}\rightarrow0$
-\end_inset
-
- for 
-\begin_inset Formula $\sigma>\sigma_{0}$
-\end_inset
-
-, which means the infinite sum 
-\begin_inset Formula $\sum a_{n}/n^{s}$
-\end_inset
-
- converges.
- 
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Results So Far
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-If 
-\begin_inset Formula $\sum_{n\leq x}a_{n}/n^{s_{0}}$
-\end_inset
-
- is bounded, the infinite sum 
-\begin_inset Formula $\sum a_{n}/n^{s}$
-\end_inset
-
- converges for 
-\begin_inset Formula $\sigma>\sigma_{0}$
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-With the special case of 
-\begin_inset Formula $s_{0}=0$
-\end_inset
-
-, if 
-\begin_inset Formula $\sum_{n\leq x}a_{n}$
-\end_inset
-
- is bounded, the infinite sum 
-\begin_inset Formula $\sum a_{n}/n^{s}$
-\end_inset
-
- converges for 
-\begin_inset Formula $\sigma>0$
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-The special case 
-\begin_inset Formula $s_{0}=0$
-\end_inset
-
- allows us to say a series converges for 
-\begin_inset Formula $\sigma>0$
-\end_inset
-
- just by looking at the coefficients 
-\begin_inset Formula $a_{n}$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Abscissa of Convergence
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-There is an abscissa of convergence 
-\begin_inset Formula $\sigma_{c}$
-\end_inset
-
- where a Dirichlet series converges for 
-\begin_inset Formula $\sigma>\sigma_{c}$
-\end_inset
-
-, and diverges for 
-\begin_inset Formula $\sigma<\sigma_{c}$
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-If a series converges (bounded) at 
-\begin_inset Formula $s_{0}$
-\end_inset
-
- then it converges at 
-\begin_inset Formula $\sigma>\sigma_{0}$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-If series doesn't converge everywhere, the 
-\begin_inset Formula $s$
-\end_inset
-
- where it diverges has 
-\begin_inset Formula $\sigma<\sigma_{0}$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Note 
-\begin_inset Formula $\sigma_{a}\geq\sigma_{c}$
-\end_inset
-
-, in fact
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\boxed{0\leq\sigma_{a}-\sigma_{c}\leq1}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Example: Alternating Zeta Function
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Let's apply our results to the 
-\series bold
-alternating zeta function
-\series default
-, also called the 
-\series bold
-eta function
-\series default
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\eta(s)=\sum\frac{(-1)^{n+1}}{n^{s}}=\frac{1}{1^{s}}-\frac{1}{2^{s}}+\frac{1}{3^{s}}-\frac{1}{4^{s}}+\ldots
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-At 
-\begin_inset Formula $s_{0}=0$
-\end_inset
-
- the partial sum 
-\begin_inset Formula $\sum_{n\leq x}(-1)^{n+1}$
-\end_inset
-
- oscillates but is always bounded 
-\begin_inset Formula $\leq1$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\implies$
-\end_inset
-
- 
-\begin_inset Formula $\sum(-1)^{n+1}/n^{s}$
-\end_inset
-
- converges for 
-\begin_inset Formula $\sigma>0$
+It also tells us the difference is bounded by 
+\begin_inset Formula $O(1)$
 \end_inset
 
 .
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In fact, the difference tends to the Euler–Mascheroni constant 
+\begin_inset Formula $\gamma\approx0.5772$
+\end_inset
+
+ which pops up in several areas of number theory and analysis.
 \end_layout
 
 \end_deeper
