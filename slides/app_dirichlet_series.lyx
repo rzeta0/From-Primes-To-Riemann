@@ -1016,7 +1016,7 @@ bigskip
 
 \begin_inset Formula 
 \begin{align*}
-\left|\sum_{x_{1}<n\leq x_{2}}\frac{a_{n}}{n^{s}}\right| & \leq2Mx_{1}^{\sigma_{0}-\sigma}+\left|s-s_{0}\right|M\left|\frac{x_{2}^{\sigma_{0}-\sigma}-x_{1}^{\sigma_{0}-\sigma}}{\sigma_{0}-\sigma}\right|\\
+\left|\sum_{x_{1}<n\leq x_{2}}\frac{a_{n}}{n^{s}}\right| & \leq2Mx_{1}^{\sigma_{0}-\sigma}+\left|s-s_{0}\right|M\left(\frac{x_{2}^{\sigma_{0}-\sigma}-x_{1}^{\sigma_{0}-\sigma}}{\sigma_{0}-\sigma}\right)\\
 \\
  & \le2Mx_{1}^{\sigma_{0}-\sigma}\left(1+\frac{\left|s-s_{0}\right|}{\sigma-\sigma_{0}}\right)
 \end{align*}
@@ -1043,7 +1043,7 @@ bigskip
 Last step uses 
 \size small
 
-\begin_inset Formula $\left|x_{2}^{\sigma_{0}-\sigma}-x_{1}^{\sigma_{0}-\sigma}\right|=\left|x_{1}^{\sigma_{0}-\sigma}-x_{2}^{\sigma_{0}-\sigma}\right|<x_{1}^{\sigma_{0}-\sigma}<2x_{1}^{\sigma_{0}-\sigma}$
+\begin_inset Formula $\left|x_{2}^{\sigma_{0}-\sigma}-x_{1}^{\sigma_{0}-\sigma}\right|=x_{1}^{\sigma_{0}-\sigma}-x_{2}^{\sigma_{0}-\sigma}<x_{1}^{\sigma_{0}-\sigma}<2x_{1}^{\sigma_{0}-\sigma}$
 \end_inset
 
 
@@ -1197,10 +1197,6 @@ If we let
 \begin_inset Formula $Kx_{1}^{\sigma_{0}-\sigma}\rightarrow0$
 \end_inset
 
- for 
-\begin_inset Formula $\sigma>\sigma_{0}$
-\end_inset
-
 , which means the infinite sum 
 \begin_inset Formula $\sum a_{n}/n^{s}$
 \end_inset
@@ -1295,11 +1291,7 @@ bigskip
 
 \begin_deeper
 \begin_layout Itemize
-The special case 
-\begin_inset Formula $s_{0}=0$
-\end_inset
-
- allows us to say a series converges for 
+We can sometimes say whether a series converges for 
 \begin_inset Formula $\sigma>0$
 \end_inset
 
@@ -1414,12 +1406,122 @@ bigskip
 \end_layout
 
 \end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Difference Between 
+\begin_inset Formula $\sigma_{c}$
+\end_inset
+
+ And 
+\begin_inset Formula $\sigma_{a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
-Note 
+Not all convergent series are absolutely convergent, so 
 \begin_inset Formula $\sigma_{a}\geq\sigma_{c}$
 \end_inset
 
-, in fact
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If a series converges at 
+\begin_inset Formula $s_{0}$
+\end_inset
+
+, the magnitude of terms is bounded.
+ We can call this bound 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\left|\frac{a_{n}}{n^{s}}\right|=\sum\left|\frac{a_{n}}{n^{s_{0}}}\cdot\frac{1}{n^{s-s_{0}}}\right|\leq C\sum\frac{1}{n^{\sigma-\sigma_{0}}}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum n^{\sigma_{0}-\sigma}$
+\end_inset
+
+ only converges for 
+\begin_inset Formula $\sigma_{0}-\sigma>1$
+\end_inset
+
+, so we can say if 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is larger than 
+\begin_inset Formula $\sigma_{c}$
+\end_inset
+
+ by at least 1, the series converges absolutely.
 \begin_inset ERT
 status open
 
