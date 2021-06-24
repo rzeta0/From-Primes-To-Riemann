@@ -1139,7 +1139,7 @@ Because
 \end_inset
 
 , that is, 
-\begin_inset Formula $O\left(\int_{1}^{N}1/t^{2}dt\right)$
+\begin_inset Formula $\mathcal{O}\left(\int_{1}^{N}1/t^{2}dt\right)$
 \end_inset
 
 .
@@ -1158,8 +1158,8 @@ bigskip
 
 \begin_inset Formula 
 \begin{align*}
-\sum_{0<n\leq N}\frac{1}{n} & =1+\ln(N)-O\left(1-\frac{1}{N}\right)\\
- & =\ln(N)+O\left(1\right)
+\sum_{0<n\leq N}\frac{1}{n} & =1+\ln(N)-\mathcal{O}\left(1-\frac{1}{N}\right)\\
+ & =\ln(N)+\mathcal{O}\left(1\right)
 \end{align*}
 
 \end_inset
