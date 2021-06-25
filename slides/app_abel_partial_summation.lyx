@@ -925,6 +925,83 @@ bigskip
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Simpler Abel Identify
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In many cases 
+\begin_inset Formula $n$
+\end_inset
+
+ starts at 1, and so the formula reduces further.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum_{1\leq n\leq x_{2}}a(n)f(n)=A(x_{2})f(x_{2})-\int_{1}^{x_{2}}A(t)f'(t)dt}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Lower limit of the integral is 1 because 
+\begin_inset Formula $A(t)=0$
+\end_inset
+
+ in the range 
+\begin_inset Formula $[0,1)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Frame
 
 \end_layout
@@ -1028,15 +1105,11 @@ bigskip
 \end_inset
 
 
-\size footnotesize
-
 \begin_inset Formula 
 \begin{align*}
-\sum_{0<n\leq N}\frac{1}{n} & =1+\sum_{1<n\leq N}\frac{1}{n}\\
+\sum_{n\leq N}\frac{1}{n} & =A(N)f(N)-\int_{1}^{N}A(t)f't)\\
 \\
- & =1+A(N)f(N)-A(1)f(1)-\int_{1}^{N}A(t)f't)dt\\
-\\
- & =1+\frac{N}{N}-\frac{1}{1}+\int_{1}^{N}\frac{t-\{t\}}{t^{2}}dt
+ & =\frac{N-\{N\}}{N}+\int_{1}^{N}\frac{t-\{t\}}{t^{2}}dt
 \end{align*}
 
 \end_inset
@@ -1071,24 +1144,19 @@ Example: Growth of
 
 \begin_deeper
 \begin_layout Itemize
-We've written 
-\begin_inset Formula $\left\lfloor t\right\rfloor $
-\end_inset
-
- as 
-\begin_inset Formula $t-\{t\}$
+We've used 
+\begin_inset Formula $\left\lfloor x\right\rfloor =x-\{x\}$
 \end_inset
 
 , where 
-\begin_inset Formula $\{t\}$
+\begin_inset Formula $\{x\}$
 \end_inset
 
  is the fractional part of 
-\begin_inset Formula $t$
+\begin_inset Formula $x$
 \end_inset
 
 .
- This lets us split the integral into manageable parts.
 \begin_inset ERT
 status open
 
@@ -1104,7 +1172,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\sum_{0<n\leq N}\frac{1}{n}=1+\int_{1}^{N}\frac{1}{t}dt-\int_{1}^{N}\frac{\{t\}}{t^{2}}dt
+\sum_{0<n\leq N}\frac{1}{n}=1+\mathcal{O}\left(\frac{1}{N}\right)+\int_{1}^{N}\frac{1}{t}dt-\int_{1}^{N}\frac{\{t\}}{t^{2}}dt
 \]
 
 \end_inset
@@ -1139,7 +1207,7 @@ Because
 \end_inset
 
 , that is, 
-\begin_inset Formula $\mathcal{O}\left(\int_{1}^{N}1/t^{2}dt\right)$
+\begin_inset Formula $\mathcal{O}\left(\left[-1/t\right]_{1}^{N}\right)$
 \end_inset
 
 .
@@ -1158,7 +1226,8 @@ bigskip
 
 \begin_inset Formula 
 \begin{align*}
-\sum_{0<n\leq N}\frac{1}{n} & =1+\ln(N)-\mathcal{O}\left(1-\frac{1}{N}\right)\\
+\sum_{0<n\leq N}\frac{1}{n} & =1+\mathcal{O}\left(\frac{1}{N}\right)+\ln(N)+\mathcal{O}\left(1-\frac{1}{N}\right)\\
+\\
  & =\ln(N)+\mathcal{O}\left(1\right)
 \end{align*}
 
