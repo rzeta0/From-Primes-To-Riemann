@@ -2143,6 +2143,165 @@ Convergence Criteria 3
 
 \begin_deeper
 \begin_layout Itemize
+We're interested in 
+\begin_inset Formula $\prod(1+a_{n})$
+\end_inset
+
+ for complex 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+, not just 
+\begin_inset Formula $\prod(1+|a_{n}|)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The key:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum|a_{n}|\text{ converges }\implies\sum a_{n}\text{converges}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let's start with two partial products
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+p_{N} & =\prod^{N}(1+a_{n})\\
+\\
+q_{N} & =\prod^{N}(1+|a_{n}|)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We assert 
+\begin_inset Formula $a_{n}\neq-1$
+\end_inset
+
+ to ensure no zero-valued factors.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Should be clear that
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+|p_{N}-1|\leq q_{N}-1
+\]
+
+\end_inset
+
 
 \end_layout
 
