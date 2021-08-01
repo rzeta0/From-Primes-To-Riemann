@@ -222,7 +222,15 @@ Infinite Sum
 
 \begin_deeper
 \begin_layout Itemize
-We say an infinite series converges if
+We say an 
+\series bold
+infinite series
+\series default
+ converges if limit of partial products tends to a 
+\series bold
+finite
+\series default
+ value.
 \begin_inset ERT
 status open
 
@@ -243,11 +251,7 @@ bigskip
 
 \end_inset
 
-where 
-\begin_inset Formula $S$
-\end_inset
 
- is finite.
 \begin_inset ERT
 status open
 
@@ -264,7 +268,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Tests to check for convergence, eg the 
+Tests exist to check for convergence, eg the 
 \series bold
 ratio test
 \series default
@@ -374,7 +378,7 @@ What do we really mean by infinite product?
 status open
 
 \begin_layout Plain Layout
-Intuition
+Initial Observations
 \end_layout
 
 \end_inset
@@ -384,7 +388,8 @@ Intuition
 
 \begin_deeper
 \begin_layout Itemize
-If elements get larger, does infinite product diverge?
+Easy to see the infinite product diverges.
+ Each factor increases the size of the product.
 \begin_inset ERT
 status open
 
@@ -398,6 +403,9 @@ bigskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 2\times3\times4\times5\times\ldots
@@ -406,6 +414,9 @@ bigskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -422,11 +433,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-If elements are 
-\begin_inset Formula $<1$
-\end_inset
-
-, does infinite product converge?
+Fundamental idea that multiplying by zero causes a product to be zero.
 \begin_inset ERT
 status open
 
@@ -442,7 +449,54 @@ bigskip
 
 \begin_inset Formula 
 \[
-0.5\times0.55\times0.555\times0.5555\times\ldots
+2\times0\times4\times5\times\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Initial Observations
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Each factor reduces the size of the product.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+2\times0\times4\times5\times\ldots
 \]
 
 \end_inset
@@ -460,87 +514,15 @@ bigskip
 
 \end_inset
 
-...
- even if the elements are getting larger?
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Intuition
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-What about these infinite products?
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
--2\times-1\times0\times1\times2\times3\times\ldots\\
-\\
--2\times-1\times\cancel{0}\times1\times2\times3\times\ldots
-\end{align*}
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
 \begin_layout Itemize
-With the 
-\begin_inset Formula $0$
-\end_inset
-
-, product is 
-\begin_inset Formula $0$
+Infinite number of such factors, the product 
+\begin_inset Formula $\rightarrow0$
 \end_inset
 
 .
- Without the 
-\begin_inset Formula $0$
-\end_inset
-
-, it diverges.
 \begin_inset ERT
 status open
 
@@ -557,95 +539,11 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Is the zero 
-\begin_inset Quotes eld
-\end_inset
-
-powerful
-\begin_inset Quotes erd
-\end_inset
-
- enough to stop divergence on its own?
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Infinite Product
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-We say an infinite product converges if
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\lim_{N\rightarrow\infty}\prod_{n=1}^{N}a_{n}=P
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $P$
-\end_inset
-
- is finite and 
+We have found 
 \series bold
-non-zero
+two different ways
 \series default
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-If 
-\begin_inset Formula $P=0$
-\end_inset
-
-, we say the infinite product 
-\series bold
-diverges to zero
-\series default
-.
+ an infinite product can be zero.
 \end_layout
 
 \end_deeper
@@ -661,50 +559,18 @@ diverges to zero
 status open
 
 \begin_layout Plain Layout
-Infinite Product & Logarithms
+Definition
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Frame
 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Why non-zero 
-\begin_inset Formula $P$
-\end_inset
-
-? Why 
-\begin_inset Quotes eld
-\end_inset
-
-diverges to zero
-\begin_inset Quotes erd
-\end_inset
-
-?
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Convention is to consider infinite products through a logarithm.
+An infinite product is defined, like infinite series, as the limit of a
+ sequence.
 \begin_inset ERT
 status open
 
@@ -720,29 +586,12 @@ bigskip
 
 \begin_inset Formula 
 \[
-\log\prod a_{n}=\sum\log a_{n}
+\prod_{n=1}^{\infty}a_{n}=\lim_{N\rightarrow\infty}\prod_{n=1}^{N}a_{n}
 \]
 
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-A product of 0 would give an undefined logarithm.
 \end_layout
 
 \end_deeper
@@ -1007,7 +856,7 @@ diverges to zero
 status open
 
 \begin_layout Plain Layout
-Useful Convergence Test
+Convergence
 \end_layout
 
 \end_inset
@@ -1017,12 +866,12 @@ Useful Convergence Test
 
 \begin_deeper
 \begin_layout Itemize
-If we can write terms as 
-\begin_inset Formula $(1+a_{n})$
+For an infinite series 
+\begin_inset Formula $\sum a_{n}$
 \end_inset
 
-, where 
-\begin_inset Formula $a_{n}>0$
+ to converge, the terms 
+\begin_inset Formula $a_{n}\rightarrow0$
 \end_inset
 
 
@@ -1039,12 +888,115 @@ bigskip
 \end_inset
 
 
-\begin_inset Formula 
-\begin{align*}
-\prod_{n=1}^{\infty}(1+a_{n}) & \leq\prod_{n=1}^{\infty}\exp(a_{n})\\
-\\
- & =\exp\sum_{n=1}^{\infty}a_{n}
-\end{align*}
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Intuition: if each term 
+\begin_inset Formula $a_{n}>\epsilon$
+\end_inset
+
+, then 
+\begin_inset Formula $\sum a_{n}>\sum\epsilon=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+(see Cauchy criterion more rigour)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+For an infinite product 
+\begin_inset Formula $\prod a_{n}$
+\end_inset
+
+ to converge, the terms 
+\begin_inset Formula $a_{n}\rightarrow1$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Intuition: if each term 
+\begin_inset Formula $a_{n}>1$
+\end_inset
+
+, the product gets ever larger.
+\end_layout
+
+\begin_layout Itemize
+If each term 
+\begin_inset Formula $a_{n}<1$
+\end_inset
+
+, the product gets ever smaller towards zero.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Removing Zero Factors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A single factor 0 collapses entire product to zero.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
 
 \end_inset
 
@@ -1052,8 +1004,51 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Inequality is from 
-\begin_inset Formula $e^{x}=1+x+\ldots$
+We miss out on understanding potentially interesting behaviour of the rest
+ of the product.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If an infinite product has a 
+\series bold
+finite number of zero-valued factors
+\series default
+, they can be removed and remaining product studied.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example:
+\begin_inset Formula 
+\[
+\prod_{n=1}(1-\frac{1}{n^{2}})=0
+\]
+
 \end_inset
 
 
@@ -1070,9 +1065,13 @@ bigskip
 \end_inset
 
 
+\end_layout
+
+\begin_layout Itemize
+Removing first factor, leaves an interesting infinite product:
 \begin_inset Formula 
 \[
-\boxed{\sum_{n=1}^{\infty}a_{n}\text{ converges }\implies\prod_{n=1}^{\infty}(1+a_{n})\text{ converges, for }a_{n}>0}
+\prod_{n=2}(1-\frac{1}{n^{2}})=\frac{1}{2}
 \]
 
 \end_inset
@@ -1093,7 +1092,7 @@ bigskip
 status open
 
 \begin_layout Plain Layout
-Example 3
+Convergence Criteria 1
 \end_layout
 
 \end_inset
@@ -1103,7 +1102,15 @@ Example 3
 
 \begin_deeper
 \begin_layout Itemize
-Does this converge?
+Having seen how an infinite products terms should 
+\begin_inset Formula $\rightarrow1$
+\end_inset
+
+, useful to write factors as 
+\begin_inset Formula $(1+a_{n})$
+\end_inset
+
+
 \begin_inset ERT
 status open
 
@@ -1119,7 +1126,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\prod_{n=1}^{\infty}\left(1+\frac{1}{n^{2}}\right)
+P=\prod(1+a_{n})
 \]
 
 \end_inset
@@ -1141,12 +1148,1002 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Yes - because 
-\begin_inset Formula $\sum_{n=1}^{\infty}1/n^{2}$
+Turn product into sum by takings logarithm
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln(P)=\ln\prod(1+a_{n})=\sum\ln(1+a_{n})
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Using 
+\begin_inset Formula $1+x\leq e^{x}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\ln(P)\leq\sum a_{n}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This tells us that if the sum is 
+\series bold
+bounded
+\series default
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ the product is bounded.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ then boundedness is 
+\series bold
+convergence
+\series default
+ (no oscillation).
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If we expand out product 
+\begin_inset Formula $\prod(1+a_{n})$
+\end_inset
+
+ we see another inequality.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1+\sum a_{n}\leq\prod(1+a_{n})=P
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The expansion creates the terms 
+\begin_inset Formula $1+\sum a_{n}$
+\end_inset
+
+ and many more
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This tells us that if the product converges 
+\begin_inset Formula $\implies$
+\end_inset
+
+ so does the sum.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The two results together give us
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum a_{n}\text{ converges }\Leftrightarrow\prod(1+a_{n})\text{ converges, for }a_{n}>0}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This allows us to say:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\prod(1+1/n)$
+\end_inset
+
+ diverges because 
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+ diverges
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\prod(1+1/n^{2})$
+\end_inset
+
+ converges because 
+\begin_inset Formula $\sum1/n^{2}$
 \end_inset
 
  converges.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Divergence To Zero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The logarithmic view of infinite products has an interesting side effect.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If the partial products 
+\begin_inset Formula $\rightarrow0$
+\end_inset
+
+ then the logarithm 
+\begin_inset Formula $\rightarrow-\infty$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This is why we say the product 
+\series bold
+diverges to zero
+\series default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+First convergence critera applies to 
+\series bold
+real
+\series default
+ values 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+.
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Would be good to have criteria for 
+\series bold
+complex
+\series default
+ 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+To do that we'll need an intermediate result about absolute values 
+\begin_inset Formula $|a_{n}|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Start by assuming sum 
+\begin_inset Formula $\sum|a_{n}|$
+\end_inset
+
+ converges to a finite 
+\begin_inset Formula $S$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\sum|a_{n}|<\infty
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Consider partial product
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{N}=\prod^{N}(1+|a_{n}|)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Using 
+\begin_inset Formula $1+x\leq e^{x}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{N}=\leq e^{\sum^{N}|a_{n}|}\leq e^{S}<\infty
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Becayse 
+\begin_inset Formula $p_{N}$
+\end_inset
+
+ are monotonically increasing, but always 
+\begin_inset Formula $\leq e^{S}$
+\end_inset
+
+, we can say 
+\begin_inset Formula $p_{N}$
+\end_inset
+
+ converges as 
+\begin_inset Formula $N\rightarrow\infty$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Need to show opposite direction too.
+ Assume product converges
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P=\prod(1+|a_{n}|)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We know 
+\begin_inset Formula $|a_{n}|\rightarrow0$
+\end_inset
+
+, so 
+\begin_inset Formula $|a_{n}|<2$
+\end_inset
+
+ for 
+\begin_inset Formula $n$
+\end_inset
+
+ at least some finite value 
+\begin_inset Formula $M$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can use 
+\begin_inset Formula $e^{x/2}\leq1+x$
+\end_inset
+
+ for 
+\begin_inset Formula $0\leq x\leq2$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{|a_{n}|/2}\leq1+|a_{n}|\text{ for }n\geq M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Set 
+\begin_inset Formula $Q$
+\end_inset
+
+ to be the infinite product but starting at 
+\begin_inset Formula $n=M$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q$
+\end_inset
+
+ converges because it is 
+\begin_inset Formula $P$
+\end_inset
+
+ but with a finite number of factors removed.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q=\prod_{M}(1+|a_{n}|)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Using 
+\begin_inset Formula $|a_{n}|<2$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+e^{\frac{1}{2}\sum_{M}^{N}|a_{n}|}\leq\prod_{M}^{N}(1+|a_{n}|)\leq Q<\infty\text{ for }n\geq M
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can see that 
+\begin_inset Formula $\sum_{M}^{N}|a_{n}|\leq2\ln(Q)<\infty$
+\end_inset
+
+, so 
+\begin_inset Formula $\sum|a_{n}|$
+\end_inset
+
+ converges.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We have a new constraint
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum|a_{n}|\text{ converges }\Leftrightarrow\prod(1+|a_{n}|)}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We can use this to show 
+\begin_inset Formula $\prod(1-1/n$
+\end_inset
+
+) diverges.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
 \end_layout
 
 \end_deeper
