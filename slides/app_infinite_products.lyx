@@ -2281,7 +2281,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Should be clear that
+Should be intuitively clear that
 \begin_inset ERT
 status open
 
@@ -2298,6 +2298,256 @@ bigskip
 \begin_inset Formula 
 \[
 |p_{N}-1|\leq q_{N}-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For 
+\begin_inset Formula $N>M\geq1$
+\end_inset
+
+, we can compare 
+\begin_inset Formula $|p_{N}-p_{M}|$
+\end_inset
+
+ with 
+\begin_inset Formula $|q_{N}-q_{M}|$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\begin{align}|p_{N}-p_{M}| & =|p_{M}|\cdot|\frac{p_{N}}{p_{M}}-1|\\
+ & =|p_{M}|\cdot|\prod_{M+1}^{N}(1+a_{n})-1|\\
+ & \leq|q_{M}|\cdot|\prod_{M+1}^{N}(1+|a_{n}|)-1|\\
+ & =|q_{M}|\cdot|\frac{q_{N}}{q_{M}}-1|\\
+ & =|q_{N}-q_{M}|
+\end{align}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $|q_{N}-q_{M}|<\epsilon$
+\end_inset
+
+, then so does 
+\begin_inset Formula $|p_{N}-p_{M}|<\epsilon$
+\end_inset
+
+.
+ This is the Cauchy criterion for convergence.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Convergence Criteria 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Finally we have
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{converges, for }a_{n}\neq-1}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This is one way, we can't say the sum comverges if the product converges.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Real 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum a_{n}\text{ converges }\Leftrightarrow\prod(1+a_{n})\text{ converges, for }a_{n}>0}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Complex 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum|a_{n}|\text{ converges }\Leftrightarrow\prod(1+|a_{n}|)}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Complex 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{converges, for }a_{n}\neq-1}
 \]
 
 \end_inset
