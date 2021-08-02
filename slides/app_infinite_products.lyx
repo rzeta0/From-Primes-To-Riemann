@@ -1098,11 +1098,7 @@ Convergence Criteria 1
 
 \begin_deeper
 \begin_layout Itemize
-We've seen how a convergent infinite product's terms should 
-\begin_inset Formula $\rightarrow1$
-\end_inset
-
-, useful to write factors as 
+Useful to write factors as 
 \begin_inset Formula $(1+a_{n})$
 \end_inset
 
@@ -1224,7 +1220,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-This tells us that if the sum is 
+If the sum is 
 \series bold
 bounded
 \series default
@@ -1233,23 +1229,7 @@ bounded
 \end_inset
 
  the product is bounded.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-If 
+ If 
 \begin_inset Formula $a_{n}>0$
 \end_inset
 
@@ -1428,6 +1408,19 @@ bigskip
 
 \begin_layout Itemize
 This allows us to say:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -1440,6 +1433,19 @@ This allows us to say:
 \end_inset
 
  diverges
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1450,7 +1456,7 @@ This allows us to say:
 \begin_inset Formula $\sum1/n^{2}$
 \end_inset
 
- converges.
+ converges
 \end_layout
 
 \end_deeper
@@ -1630,25 +1636,12 @@ Convergence Criteria 2
 
 \begin_deeper
 \begin_layout Itemize
-Start by assuming sum 
+Start by assuming 
 \begin_inset Formula $\sum|a_{n}|$
 \end_inset
 
  converges to a finite 
 \begin_inset Formula $S$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
 \end_inset
 
 
@@ -1660,53 +1653,14 @@ S=\sum|a_{n}|<\infty
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
 Consider partial product
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula 
 \[
 p_{N}=\prod^{N}(1+|a_{n}|)
 \]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
 
 \end_inset
 
@@ -1719,22 +1673,9 @@ Using
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula 
 \[
-p_{N}=\leq e^{\sum^{N}|a_{n}|}\leq e^{S}<\infty
+p_{N}\leq e^{\sum^{N}|a_{n}|}\leq e^{S}<\infty
 \]
 
 \end_inset
@@ -1747,7 +1688,7 @@ status open
 
 
 \backslash
-bigskip
+smallskip
 \end_layout
 
 \end_inset
@@ -1756,7 +1697,6 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Becayse 
 \begin_inset Formula $p_{N}$
 \end_inset
 
@@ -1764,15 +1704,15 @@ Becayse
 \begin_inset Formula $\leq e^{S}$
 \end_inset
 
-, we can say 
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
 \begin_inset Formula $p_{N}$
 \end_inset
 
- converges as 
-\begin_inset Formula $N\rightarrow\infty$
-\end_inset
-
-
+ converges
 \end_layout
 
 \end_deeper
@@ -1799,7 +1739,7 @@ Convergence Criteria 2
 \begin_deeper
 \begin_layout Itemize
 Need to show opposite direction too.
- Assume product converges
+ Assume product converges.
 \begin_inset ERT
 status open
 
@@ -2000,19 +1940,6 @@ Using
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula 
 \[
 e^{\frac{1}{2}\sum_{M}^{N}|a_{n}|}\leq\prod_{M}^{N}(1+|a_{n}|)\leq Q<\infty\text{ for }n\geq M
@@ -2028,7 +1955,7 @@ status open
 
 
 \backslash
-bigskip
+smallskip
 \end_layout
 
 \end_inset
@@ -2110,7 +2037,7 @@ bigskip
 
 \begin_layout Itemize
 We can use this to show 
-\begin_inset Formula $\prod(1-1/n$
+\begin_inset Formula $\prod_{2}(1-1/n$
 \end_inset
 
 ) diverges.
@@ -2185,7 +2112,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\boxed{\sum|a_{n}|\text{ converges }\implies\sum a_{n}\text{converges}}
+\boxed{\sum|a_{n}|\text{ converges }\implies\sum a_{n}\text{ converges}}
 \]
 
 \end_inset
@@ -2217,19 +2144,6 @@ Convergence Criteria 3
 \begin_deeper
 \begin_layout Itemize
 Let's start with two partial products
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula 
 \begin{align*}
 p_{N} & =\prod^{N}(1+a_{n})\\
@@ -2278,19 +2192,6 @@ bigskip
 
 \begin_layout Itemize
 Should be intuitively clear that
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula 
 \[
 |p_{N}-1|\leq q_{N}-1
@@ -2337,41 +2238,20 @@ For
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
+\size scriptsize
 
 \begin_inset Formula 
-\[
-\begin{align}|p_{N}-p_{M}| & =|p_{M}|\cdot|\frac{p_{N}}{p_{M}}-1|\\
+\begin{align*}
+|p_{N}-p_{M}| & =|p_{M}|\cdot|\frac{p_{N}}{p_{M}}-1|\\
+\\
  & =|p_{M}|\cdot|\prod_{M+1}^{N}(1+a_{n})-1|\\
+\\
  & \leq|q_{M}|\cdot|\prod_{M+1}^{N}(1+|a_{n}|)-1|\\
+\\
  & =|q_{M}|\cdot|\frac{q_{N}}{q_{M}}-1|\\
+\\
  & =|q_{N}-q_{M}|
-\end{align}
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
+\end{align*}
 
 \end_inset
 
@@ -2383,12 +2263,12 @@ If
 \begin_inset Formula $|q_{N}-q_{M}|<\epsilon$
 \end_inset
 
-, then so does 
+, then 
 \begin_inset Formula $|p_{N}-p_{M}|<\epsilon$
 \end_inset
 
 .
- This is the Cauchy criterion for convergence.
+ Cauchy criterion for convergence.
 \end_layout
 
 \end_deeper
@@ -2430,7 +2310,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\boxed{\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{converges, for }a_{n}\neq-1}
+\boxed{\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{ converges, for }a_{n}\neq-1}
 \]
 
 \end_inset
@@ -2543,9 +2423,276 @@ Complex
 
 \begin_inset Formula 
 \[
-\boxed{\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{converges, for }a_{n}\neq-1}
+\boxed{\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{ converges, for }a_{n}\neq-1}
 \]
 
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Riemann Zeta Function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For 
+\begin_inset Formula $\sigma>1$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\zeta(s)=\sum\frac{1}{n^{s}}=\prod(1-\frac{1}{p^{s}})^{-1}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+No factor 
+\begin_inset Formula $(1-1/p^{s})^{-1}$
+\end_inset
+
+ is zero.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+That would require 
+\begin_inset Formula $p^{s}$
+\end_inset
+
+ to be zero.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This isn't possible, and is easy to see by writing
+\begin_inset Formula 
+\[
+\left|p^{s}\right|=\left|e^{s\ln(p)}\right|=e^{\sigma\ln(p)}>0
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Also need to check product doesn't 
+\series bold
+diverge to zero
+\series default
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Riemann Zeta Function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{ converges, for }a_{n}\neq-1
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let's see if 
+\begin_inset Formula $\sum|-1/p^{s}|$
+\end_inset
+
+ converges 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum\left|-\frac{1}{p^{s}}\right|=\sum\frac{1}{p^{\sigma}}\leq\sum\frac{1}{n^{\sigma}}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So 
+\begin_inset Formula $1/\zeta(s)=\prod(1-\frac{1}{p^{s}})$
+\end_inset
+
+ converges to a non-zero value.
+ And so 
+\begin_inset Formula $\zeta(s)=\prod(1-\frac{1}{p^{s}})^{-1}$
+\end_inset
+
+ converges to a non-zero value.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\implies$
+\end_inset
+
+Riemann Zeta function has no zeros 
+\begin_inset Formula $\sigma>1$
 \end_inset
 
 
