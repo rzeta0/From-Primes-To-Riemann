@@ -1942,7 +1942,7 @@ Using
 
 \begin_inset Formula 
 \[
-e^{\frac{1}{2}\sum_{M}^{N}|a_{n}|}\leq\prod_{M}^{N}(1+|a_{n}|)\leq Q<\infty\text{ for }n\geq M
+e^{\frac{1}{2}\sum_{M}|a_{n}|}\leq Q<\infty\text{ for }n\geq M
 \]
 
 \end_inset
@@ -1965,7 +1965,7 @@ smallskip
 
 \begin_layout Itemize
 We can see that 
-\begin_inset Formula $\sum_{M}^{N}|a_{n}|\leq2\ln(Q)<\infty$
+\begin_inset Formula $\sum_{M}|a_{n}|\leq2\ln(Q)<\infty$
 \end_inset
 
 , so 
