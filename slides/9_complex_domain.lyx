@@ -259,7 +259,7 @@ real
 \begin_inset Formula $\zeta(s)$
 \end_inset
 
- diverges for 
+ converges for 
 \begin_inset Formula $s>1$
 \end_inset
 
@@ -1122,32 +1122,6 @@ Improved Model
 \begin_layout Itemize
 The intuition that a function should continue smoothly without abrupt changes
  corresponds to a powerful property of many functions we come across.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-If we can show 
-\begin_inset Formula $\zeta(s)$
-\end_inset
-
- is one of these well-behaved functions, we are then justified in trying
- to extend it to the left of 
-\begin_inset Formula $\sigma=1$
-\end_inset
-
-.
 \end_layout
 
 \end_deeper
