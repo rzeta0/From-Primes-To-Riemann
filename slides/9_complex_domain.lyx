@@ -421,18 +421,11 @@ Convergence For
 
 \begin_deeper
 \begin_layout Itemize
-
-\series bold
-Triangle inequality
-\series default
- - magnitude of sum 
-\begin_inset Formula $\leq$
-\end_inset
-
- sum of magnitudes.
+Let's look at the series with each term replaced by its magnitude.
+ 
 \begin_inset Formula 
 \[
-\left|\sum\frac{1}{n^{s}}\right|\leq\sum\left|\frac{1}{n^{\sigma}}\frac{1}{n^{it}}\right|
+\sum\left|\frac{1}{n^{s}}\right|=\sum\left|\frac{1}{n^{\sigma}}\frac{1}{n^{it}}\right|
 \]
 
 \end_inset
@@ -465,7 +458,7 @@ Rewriting
  makes clear it has a magnitude of 1.
 \begin_inset Formula 
 \[
-\left|\sum\frac{1}{n^{s}}\right|\leq\sum\frac{1}{n^{\sigma}}
+\sum\left|\frac{1}{n^{s}}\right|=\sum\frac{1}{n^{\sigma}}
 \]
 
 \end_inset
@@ -495,7 +488,7 @@ We know
 \begin_inset Formula $\sigma>1$
 \end_inset
 
-
+ 
 \begin_inset Formula $\implies$
 \end_inset
 
@@ -503,7 +496,45 @@ We know
 \begin_inset Formula $\sum1/n^{s}$
 \end_inset
 
- converges when 
+ converges 
+\series bold
+absolutely
+\series default
+ for for 
+\begin_inset Formula $\sigma>1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Absolute convergence implies convergence
+\series default
+ 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\sum1/n^{s}$
+\end_inset
+
+ converges for 
 \begin_inset Formula $\sigma>1$
 \end_inset
 
