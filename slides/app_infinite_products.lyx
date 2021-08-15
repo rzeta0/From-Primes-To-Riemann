@@ -108,207 +108,6 @@ Tariq Rashid
 status open
 
 \begin_layout Plain Layout
-Infinite Sum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-At school we learn a lot about 
-\series bold
-infinite sums
-\series default
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\sum_{n=1}^{\infty}a_{n}=a_{1}+a_{2}+a_{3}+\ldots
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Quotes eld
-\end_inset
-
-Sum
-\begin_inset Quotes erd
-\end_inset
-
- 
-\begin_inset Formula $\leftrightarrow$
-\end_inset
-
- 
-\begin_inset Quotes eld
-\end_inset
-
-Series
-\begin_inset Quotes erd
-\end_inset
-
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-What do we really mean by infinite sum?
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Infinite Sum
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-We say an 
-\series bold
-infinite series
-\series default
- converges if the limit of partial sums tends to a 
-\series bold
-finite
-\series default
- value.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\lim_{N\rightarrow\infty}\sum_{n=1}^{N}a_{n}=S
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Tests exist to check for convergence, eg the 
-\series bold
-ratio test
-\series default
-.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_{n}}\right|<1
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
 Infinite Product
 \end_layout
 
@@ -570,8 +369,19 @@ Definition
 
 \begin_deeper
 \begin_layout Itemize
-An infinite product is defined, like infinite series, as the limit of a
- sequence.
+Similar to 
+\series bold
+infinite series
+\series default
+, we say an 
+\series bold
+infinite product
+\series default
+ converges if the limit of the partial products is a 
+\series bold
+finite
+\series default
+ value.
 \begin_inset ERT
 status open
 
@@ -587,12 +397,33 @@ bigskip
 
 \begin_inset Formula 
 \[
-\prod_{n=1}^{\infty}a_{n}=\lim_{N\rightarrow\infty}\prod_{n=1}^{N}a_{n}
+\lim_{N\rightarrow\infty}\prod_{n=1}^{N}a_{n}=P
 \]
 
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We'll see why it is conventional to insist the finite value is 
+\series bold
+non-zero
+\series default
+.
 \end_layout
 
 \end_deeper
@@ -640,6 +471,27 @@ bigskip
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Each factor 
+\begin_inset Formula $(1+1/n)$
+\end_inset
+
+ is larger than one, so we expect the product to keep growing.
 \end_layout
 
 \end_deeper
@@ -770,11 +622,30 @@ Note
 \begin_inset Formula $n$
 \end_inset
 
- starts at 
-\begin_inset Formula $2$
+ starts at 2 to ensure the first factor is not zero.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Itemize
+Each factor 
+\begin_inset Formula $(1-1/n)$
+\end_inset
+
+ is smaller than one, so we expect the product to keep shrinking.
+ 
 \end_layout
 
 \end_deeper
@@ -799,8 +670,19 @@ Example 2
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Again, consider partial product.
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\prod_{n=2}^{N}\left(1-\frac{1}{n}\right) & =\prod_{n=2}^{N}\left(\frac{n-1}{n}\right)\\
+\\
+ & =\frac{1}{\cancel{2}}\times\frac{\cancel{2}}{\cancel{3}}\times\frac{\cancel{3}}{\cancel{4}}\times\ldots\times\frac{\cancel{N+1}}{N}\\
+\\
+ & =\frac{1}{N}
+\end{align*}
+
+\end_inset
+
+
 \begin_inset ERT
 status open
 
@@ -810,18 +692,6 @@ status open
 \backslash
 bigskip
 \end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{align*}
-\prod_{n=2}^{N}\left(1-\frac{1}{n}\right) & =\prod_{n=2}^{N}\left(\frac{n-1}{n}\right)\\
-\\
- & =\frac{1}{\cancel{2}}\times\frac{\cancel{2}}{\cancel{3}}\times\frac{\cancel{3}}{\cancel{4}}\times\ldots\times\frac{\cancel{N+1}}{N}\\
-\\
- & =\frac{1}{N}
-\end{align*}
 
 \end_inset
 
@@ -837,7 +707,7 @@ As
 \begin_inset Formula $0$
 \end_inset
 
-, so product 
+, we say product 
 \series bold
 diverges to zero
 \series default
@@ -857,7 +727,11 @@ diverges to zero
 status open
 
 \begin_layout Plain Layout
-Convergence
+Convergence And 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -891,50 +765,6 @@ bigskip
 
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Intuition: if each term 
-\begin_inset Formula $a_{n}>\epsilon$
-\end_inset
-
-, then 
-\begin_inset Formula $\sum a_{n}>\sum\epsilon=\infty$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-(see Cauchy criterion for more rigour)
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
 \begin_layout Itemize
 For an infinite product 
 \begin_inset Formula $\prod a_{n}$
@@ -962,7 +792,7 @@ bigskip
 
 \begin_deeper
 \begin_layout Itemize
-Intuition: if each term 
+if each term 
 \begin_inset Formula $a_{n}>1$
 \end_inset
 
@@ -970,11 +800,28 @@ Intuition: if each term
 \end_layout
 
 \begin_layout Itemize
-If each term 
+if each term 
 \begin_inset Formula $a_{n}<1$
 \end_inset
 
 , the product gets ever smaller towards zero.
+\end_layout
+
+\begin_layout Itemize
+negative 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ cause partial product to oscillate.
+\end_layout
+
+\begin_layout Itemize
+..
+ meaning convergence only happens if 
+\begin_inset Formula $a_{n}\rightarrow1$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -1022,7 +869,7 @@ If an infinite product has a
 \series bold
 finite number of zero-valued factors
 \series default
-, they can be removed and remaining product studied.
+, they can be removed to leave a different potentially interesting product.
 \begin_inset ERT
 status open
 
@@ -1042,7 +889,7 @@ bigskip
 Example:
 \begin_inset Formula 
 \[
-\prod_{n=1}(1-\frac{1}{n^{2}})=0
+\prod_{n=1}\left(1-\frac{1}{n^{2}}\right)=0
 \]
 
 \end_inset
@@ -1067,7 +914,7 @@ bigskip
 Removing first factor leaves an interesting infinite product:
 \begin_inset Formula 
 \[
-\prod_{n=2}(1-\frac{1}{n^{2}})=\frac{1}{2}
+\prod_{n=2}\left(1-\frac{1}{n^{2}}\right)=\frac{1}{2}
 \]
 
 \end_inset
@@ -1088,7 +935,7 @@ Removing first factor leaves an interesting infinite product:
 status open
 
 \begin_layout Plain Layout
-Convergence Criteria 1
+Convergence Criterion 1
 \end_layout
 
 \end_inset
@@ -1253,7 +1100,7 @@ convergence
 status open
 
 \begin_layout Plain Layout
-Convergence Criteria 1
+Convergence Criterion 1
 \end_layout
 
 \end_inset
@@ -1359,7 +1206,7 @@ bigskip
 status open
 
 \begin_layout Plain Layout
-Convergence Criteria 1
+Convergence Criterion 1
 \end_layout
 
 \end_inset
@@ -1473,6 +1320,86 @@ bigskip
 status open
 
 \begin_layout Plain Layout
+Convergence Criterion 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Using 
+\begin_inset Formula $1-x\leq e^{-x}$
+\end_inset
+
+ leads to a criterion for products of the form 
+\begin_inset Formula $\prod(1-a_{n})$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\boxed{\sum a_{n}\text{ converges }\Leftrightarrow\prod\left(1-a_{n}\right)\text{ converges, for }0<a_{n}<1}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So 
+\begin_inset Formula $\prod_{2}^{\infty}(1-1/n$
+\end_inset
+
+) diverges, because 
+\begin_inset Formula $\sum1/n$
+\end_inset
+
+ diverges.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Divergence To Zero
 \end_layout
 
@@ -1545,7 +1472,7 @@ diverges to zero
 status open
 
 \begin_layout Plain Layout
-Convergence Criteria 2
+Convergence Criterion 3
 \end_layout
 
 \end_inset
@@ -1555,7 +1482,7 @@ Convergence Criteria 2
 
 \begin_deeper
 \begin_layout Itemize
-First convergence critera applies to 
+Previous convergence critera apply for 
 \series bold
 real
 \series default
@@ -1606,161 +1533,11 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-To do that we'll need an intermediate result about absolute values 
+To do that we'll need an intermediate result about 
 \begin_inset Formula $|a_{n}|$
 \end_inset
 
 
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Criteria 2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Start by assuming 
-\begin_inset Formula $\sum|a_{n}|$
-\end_inset
-
- converges to a finite 
-\begin_inset Formula $S$
-\end_inset
-
-
-\begin_inset Formula 
-\[
-S=\sum|a_{n}|<\infty
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Consider partial product
-\begin_inset Formula 
-\[
-p_{N}=\prod^{N}(1+|a_{n}|)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Using 
-\begin_inset Formula $1+x\leq e^{x}$
-\end_inset
-
-
-\begin_inset Formula 
-\[
-p_{N}\leq e^{\sum^{N}|a_{n}|}\leq e^{S}<\infty
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-smallskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $p_{N}$
-\end_inset
-
- are monotonically increasing, but always 
-\begin_inset Formula $\leq e^{S}$
-\end_inset
-
- 
-\begin_inset Formula $\implies$
-\end_inset
-
- 
-\begin_inset Formula $p_{N}$
-\end_inset
-
- converges
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Criteria 2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Need to show opposite direction too.
- Assume product converges.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-P=\prod(1+|a_{n}|)
-\]
-
-\end_inset
-
-
 \begin_inset ERT
 status open
 
@@ -1777,103 +1554,20 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-We know 
-\begin_inset Formula $|a_{n}|\rightarrow0$
+For complex 
+\begin_inset Formula $a_{n}$
 \end_inset
 
-, so 
-\begin_inset Formula $|a_{n}|<2$
+, we have 
+\begin_inset Formula $|a_{n}|>0$
 \end_inset
 
- for 
-\begin_inset Formula $n$
-\end_inset
-
- at least some finite value 
-\begin_inset Formula $M$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-We can use 
-\begin_inset Formula $e^{x/2}\leq1+x$
-\end_inset
-
- for 
-\begin_inset Formula $0\leq x\leq2$
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-e^{|a_{n}|/2}\leq1+|a_{n}|\text{ for }n\geq M
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Criteria 2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Set 
-\begin_inset Formula $Q$
-\end_inset
-
- to be the infinite product but starting at 
-\begin_inset Formula $n=M$
+ for all 
+\begin_inset Formula $a_{n}\neq0$
 \end_inset
 
 .
+ 
 \begin_inset ERT
 status open
 
@@ -1889,90 +1583,15 @@ bigskip
 
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $Q$
-\end_inset
-
- converges because it is 
-\begin_inset Formula $P$
-\end_inset
-
- but with a finite number of factors removed.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
 \begin_inset Formula 
 \[
-Q=\prod_{M}(1+|a_{n}|)
+\sum|a_{n}|\text{ converges }\Leftrightarrow\prod(1+|a_{n}|)\text{ converges}
 \]
 
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Using 
-\begin_inset Formula $|a_{n}|<2$
-\end_inset
-
-
-\begin_inset Formula 
-\[
-e^{\frac{1}{2}\sum_{M}|a_{n}|}\leq Q<\infty\text{ for }n\geq M
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-smallskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-We can see that 
-\begin_inset Formula $\sum_{M}|a_{n}|\leq2\ln(Q)<\infty$
-\end_inset
-
-, so 
-\begin_inset Formula $\sum|a_{n}|$
-\end_inset
-
- converges.
 \end_layout
 
 \end_deeper
@@ -1988,75 +1607,7 @@ We can see that
 status open
 
 \begin_layout Plain Layout
-Convergence Criteria 2
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-We have a new constraint
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\boxed{\sum|a_{n}|\text{ converges }\Leftrightarrow\prod(1+|a_{n}|)}
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-We can use this to show 
-\begin_inset Formula $\prod_{2}(1-1/n$
-\end_inset
-
-) diverges.
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Criteria 3
+Convergence Criterion 3
 \end_layout
 
 \end_inset
@@ -2079,7 +1630,6 @@ We're interested in
 \end_inset
 
 .
- 
 \begin_inset ERT
 status open
 
@@ -2093,57 +1643,6 @@ bigskip
 \end_inset
 
 
-\end_layout
-
-\begin_layout Itemize
-The key:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\boxed{\sum|a_{n}|\text{ converges }\implies\sum a_{n}\text{ converges}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-Convergence Criteria 3
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Let's start with two partial products
 \begin_inset Formula 
 \begin{align*}
 p_{N} & =\prod^{N}(1+a_{n})\\
@@ -2175,31 +1674,6 @@ We assert
 \end_inset
 
  to ensure no zero-valued factors.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Should be intuitively clear that
-\begin_inset Formula 
-\[
-|p_{N}-1|\leq q_{N}-1
-\]
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
@@ -2215,7 +1689,7 @@ Should be intuitively clear that
 status open
 
 \begin_layout Plain Layout
-Convergence Criteria 3
+Convergence Criterion 3
 \end_layout
 
 \end_inset
@@ -2242,15 +1716,15 @@ For
 
 \begin_inset Formula 
 \begin{align*}
-|p_{N}-p_{M}| & =|p_{M}|\cdot|\frac{p_{N}}{p_{M}}-1|\\
+\left|p_{N}-p_{M}\right| & =|p_{M}|\cdot\left|\frac{p_{N}}{p_{M}}-1\right|\\
 \\
- & =|p_{M}|\cdot|\prod_{M+1}^{N}(1+a_{n})-1|\\
+ & =|p_{M}|\cdot\left|\prod_{M+1}^{N}(1+a_{n})-1\right|\\
 \\
- & \leq|q_{M}|\cdot|\prod_{M+1}^{N}(1+|a_{n}|)-1|\\
+ & \leq|q_{M}|\cdot\left|\prod_{M+1}^{N}(1+|a_{n}|)-1\right|\\
 \\
- & =|q_{M}|\cdot|\frac{q_{N}}{q_{M}}-1|\\
+ & =|q_{M}|\cdot\left|\frac{q_{N}}{q_{M}}-1\right|\\
 \\
- & =|q_{N}-q_{M}|
+\left|p_{N}-p_{M}\right| & \leq\left|q_{N}-q_{M}\right|
 \end{align*}
 
 \end_inset
@@ -2269,6 +1743,15 @@ If
 
 .
  Cauchy criterion for convergence.
+ If 
+\begin_inset Formula $q_{N}$
+\end_inset
+
+ converges, so does 
+\begin_inset Formula $p_{N}$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
@@ -2294,7 +1777,27 @@ Convergence Criteria 3
 
 \begin_deeper
 \begin_layout Itemize
-Finally we have
+So 
+\begin_inset Formula $\sum|a_{n}|$
+\end_inset
+
+ converges 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\prod(1+|a_{n}|)$
+\end_inset
+
+ converges 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\prod(1+a_{n})$
+\end_inset
+
+ converges.
 \begin_inset ERT
 status open
 
@@ -2387,14 +1890,14 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Complex 
+Real 
 \begin_inset Formula $a_{n}$
 \end_inset
 
 
 \begin_inset Formula 
 \[
-\boxed{\sum|a_{n}|\text{ converges }\Leftrightarrow\prod(1+|a_{n}|)}
+\boxed{\sum a_{n}\text{ converges }\Leftrightarrow\prod\left(1-a_{n}\right)\text{ converges, for }0<a_{n}<1}
 \]
 
 \end_inset
@@ -2431,6 +1934,387 @@ Complex
 
 \end_layout
 
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why Convergence Is Non-Zero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Convergence according to these criteria 
+\begin_inset Formula $\implies$
+\end_inset
+
+ products converge to a 
+\series bold
+non-zero
+\series default
+ value.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Why?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why Convergence Is Non-Zero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We've know 
+\begin_inset Formula $a_{n}\rightarrow0$
+\end_inset
+
+, so 
+\begin_inset Formula $|a_{n}|<\nicefrac{{1}}{2}$
+\end_inset
+
+ except for a finite number of terms.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Useful inequality 
+\begin_inset Formula $1+x\leq e^{x}$
+\end_inset
+
+ gives us
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1\leq\prod(1+|a_{n}|)<e^{\sum|a_{n}|}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum|a_{n}|$
+\end_inset
+
+ converges 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\prod(1+|a_{n}|)$
+\end_inset
+
+ converges and is non-zero.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why Convergence Is Non-Zero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Another inequality 
+\begin_inset Formula $1-x\geq e^{-2x}$
+\end_inset
+
+ for 
+\begin_inset Formula $0\leq x\leq1/2$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+0<e^{-2\sum|a_{n}|}\leq\prod(1-|a_{n}|)\leq1
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Uses 
+\begin_inset Formula $e^{y}>0$
+\end_inset
+
+ for all real 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum|a_{n}|$
+\end_inset
+
+ converges 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\prod(1-|a_{n}|)$
+\end_inset
+
+ converges and is non-zero.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Why Convergence Is Non-Zero
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Another inequality
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+1-|a_{n}|\le|1\pm a_{n}|\le1+|a_{n}|
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\prod(1-|a_{n}|)\leq\prod(1\pm a_{n})\leq\prod(1+|a_{n}|)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum|a_{n}|$
+\end_inset
+
+ converges 
+\begin_inset Formula $\implies$
+\end_inset
+
+ 
+\begin_inset Formula $\prod(1\pm a_{n})$
+\end_inset
+
+ is non-zero
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+because its value is between two known non-zero values.
+\end_layout
+
+\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator plain
@@ -2595,10 +2479,34 @@ Riemann Zeta Function
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
+\begin_layout Itemize
+Consider 
+\begin_inset Formula $1/\zeta(s)=\prod(1-1/p^{s})$
+\end_inset
+
+.
+ Using third convergence criterion, check 
+\begin_inset Formula $\sum|1/p^{s}|$
+\end_inset
+
+ converges.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
-\sum|a_{n}|\text{ converges }\implies\prod(1+a_{n})\text{ converges, for }a_{n}\neq-1
+\sum\left|\frac{1}{p^{s}}\right|=\sum\frac{1}{p^{\sigma}}\leq\sum\frac{1}{n^{\sigma}}
 \]
 
 \end_inset
@@ -2620,32 +2528,20 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Let's see if 
-\begin_inset Formula $\sum|-1/p^{s}|$
+Because 
+\begin_inset Formula $\sum1/n^{\sigma}$
 \end_inset
 
- converges 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
+ converges for 
+\begin_inset Formula $\sigma>1$
 \end_inset
 
-
-\begin_inset Formula 
-\[
-\sum\left|-\frac{1}{p^{s}}\right|=\sum\frac{1}{p^{\sigma}}\leq\sum\frac{1}{n^{\sigma}}
-\]
-
+, so does 
+\begin_inset Formula $\sum|1/p^{s}|$
 \end_inset
 
-
+.
+ 
 \begin_inset ERT
 status open
 
@@ -2662,16 +2558,15 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-So 
-\begin_inset Formula $1/\zeta(s)=\prod(1-\frac{1}{p^{s}})$
+This means 
+\begin_inset Formula $1/\zeta(s)$
 \end_inset
 
- converges to a non-zero value.
- And so 
-\begin_inset Formula $\zeta(s)=\prod(1-\frac{1}{p^{s}})^{-1}$
+ converges to a non-zero value, and therefore so does 
+\begin_inset Formula $\zeta(s)$
 \end_inset
 
- converges to a non-zero value.
+.
 \begin_inset ERT
 status open
 
