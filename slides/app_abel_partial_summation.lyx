@@ -1107,7 +1107,7 @@ bigskip
 
 \begin_inset Formula 
 \begin{align*}
-\sum_{n\leq N}\frac{1}{n} & =A(N)f(N)-\int_{1}^{N}A(t)f't)\\
+\sum_{n\leq N}\frac{1}{n} & =A(N)f(N)-\int_{1}^{N}A(t)f'(t)dt\\
 \\
  & =\frac{N-\{N\}}{N}+\int_{1}^{N}\frac{t-\{t\}}{t^{2}}dt
 \end{align*}
