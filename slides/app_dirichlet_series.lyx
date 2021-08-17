@@ -1077,11 +1077,11 @@ Abscissa of Convergence
 \begin_deeper
 \begin_layout Itemize
 The key point is that 
-\begin_inset Formula $\sum a_{n}/n^{s}$
+\begin_inset Formula $\sum_{x_{1}<n\leq x_{2}}a_{n}/n^{s}$
 \end_inset
 
  is bounded if 
-\begin_inset Formula $\sum a_{n}/n^{s_{0}}$
+\begin_inset Formula $\sum_{n\leq x}a_{n}/n^{s_{0}}$
 \end_inset
 
  is bounded, where 
@@ -1229,10 +1229,10 @@ Results So Far
 \begin_deeper
 \begin_layout Itemize
 If 
-\begin_inset Formula $\sum a_{n}/n^{s_{0}}$
+\begin_inset Formula $\sum_{n\leq x}a_{n}/n^{s_{0}}$
 \end_inset
 
- is bounded, then 
+ is bounded, the infinite sum 
 \begin_inset Formula $\sum a_{n}/n^{s}$
 \end_inset
 
@@ -1506,11 +1506,11 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\sum n^{\sigma_{0}-\sigma}$
+\begin_inset Formula $\sum1/n^{\sigma-\sigma_{0}}$
 \end_inset
 
  only converges for 
-\begin_inset Formula $\sigma_{0}-\sigma>1$
+\begin_inset Formula $\sigma-\sigma_{0}>1$
 \end_inset
 
 , so we can say if 
