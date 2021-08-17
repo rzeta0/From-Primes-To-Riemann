@@ -2260,7 +2260,7 @@ bigskip
 
 \begin_inset Formula 
 \[
-\prod(1-|a_{n}|)\leq\prod(1\pm a_{n})\leq\prod(1+|a_{n}|)
+\prod(1-|a_{n}|)\leq\left|\prod(1\pm a_{n})\right|\leq\prod(1+|a_{n}|)
 \]
 
 \end_inset
@@ -2311,7 +2311,7 @@ bigskip
 
 \begin_deeper
 \begin_layout Itemize
-because its value is between two known non-zero values.
+because its absoslute value is between two known non-zero values.
 \end_layout
 
 \end_deeper
