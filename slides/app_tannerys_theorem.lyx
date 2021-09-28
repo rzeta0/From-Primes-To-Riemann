@@ -1,0 +1,890 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Madrid}
+
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{enumerate items}[default]
+
+\definecolor{MyBackground}{rgb}{1.0000,0.95,0.85}
+\setbeamercolor{background canvas}{bg=MyBackground}
+
+\definecolor{MyBullets}{rgb}{0.0,0.0,0.90}
+\setbeamercolor{itemize item}{fg=MyBullets}
+\setbeamercolor{itemize subitem}{fg=MyBullets!40}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 1
+\tocdepth 1
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Swapping 
+\begin_inset Formula $\lim\sum$
+\end_inset
+
+ For 
+\begin_inset Formula $\sum\lim$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subtitle
+From Primes To Riemann
+\end_layout
+
+\begin_layout Author
+Tariq Rashid
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Previously ...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $|\zeta(s)|$
+\end_inset
+
+ looks like it 
+\begin_inset Formula $\rightarrow1$
+\end_inset
+
+ as 
+\begin_inset Formula $\sigma\rightarrow+\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/blog/rzeta_3d_blog.pdf
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+ as 
+\begin_inset Formula $\sigma\rightarrow+\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{\sigma\rightarrow\infty}\sum_{n}\frac{1}{n^{s}}=\lim_{\sigma\rightarrow\infty}\left(\frac{1}{1^{s}}+\frac{1}{2^{s}}+\ldots\right)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tempting to say 
+\begin_inset Formula $|n^{-s}|=n^{-\sigma}\rightarrow0$
+\end_inset
+
+ as 
+\begin_inset Formula $\sigma\rightarrow\infty$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ except 
+\begin_inset Formula $n=1$
+\end_inset
+
+, then conclude 
+\begin_inset Formula $\zeta(s)\rightarrow1$
+\end_inset
+
+ as 
+\begin_inset Formula $\sigma\rightarrow\infty$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In effect, this takes the limit inside the sum.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{n}\lim_{\sigma\rightarrow\infty}\frac{1}{n^{s}}=\lim_{\sigma\rightarrow\infty}\left(\frac{1}{1^{s}}\right)+\lim_{\sigma\rightarrow\infty}\left(\frac{1}{2^{s}}\right)+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Swapping 
+\begin_inset Formula $\lim\sum$
+\end_inset
+
+ For 
+\begin_inset Formula $\sum\lim$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+However, the limit of an infinite sum is not always the sum of the limits.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Tannery's Theorem tells us when we can swap sum and limit operators.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Hints The Function Extends Into 
+\begin_inset Formula $\sigma\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The theorem has three requirements
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+An infinite sum 
+\begin_inset Formula $S_{j}=\sum_{k}f_{k}(j)$
+\end_inset
+
+ that converges
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The limit 
+\begin_inset Formula $\lim_{j\rightarrow\infty}f_{k}(j)=f_{k}$
+\end_inset
+
+ exists
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+An 
+\begin_inset Formula $M_{k}\geq\left|f_{k}(j)\right|$
+\end_inset
+
+ independent of 
+\begin_inset Formula $j$
+\end_inset
+
+, where 
+\begin_inset Formula $\sum_{k}M_{k}$
+\end_inset
+
+ converges
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If the requirements are met, we can take the limit inside the sum.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{j\rightarrow\infty}\sum_{k}f_{k}(j)=\sum_{k}\lim_{j\rightarrow\infty}f_{k}(j)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Application To 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+We start with the convergent infinite sum.
+ Here 
+\begin_inset Formula $f_{k}(j)$
+\end_inset
+
+ is 
+\begin_inset Formula $f_{n}(s)=1/n^{s}.$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\[
+\zeta(s)=\sum_{n}\frac{1}{n^{s}}\text{ converges for }\sigma>1
+\]
+
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We confirm 
+\begin_inset Formula $f_{n}(s)$
+\end_inset
+
+ exists when 
+\begin_inset Formula $\sigma\rightarrow\infty$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size small
+
+\begin_inset Formula 
+\[
+\lim_{\sigma\rightarrow\infty}\frac{1}{n^{s}}=f_{n}=\begin{cases}
+1 & n=1\\
+0 & n>1
+\end{cases}
+\]
+
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+We also find an 
+\begin_inset Formula $M_{n}\geq\left|f_{n}(s)\right|$
+\end_inset
+
+ independent of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\[
+\left|\frac{1}{n^{s}}\right|=\frac{1}{n^{\sigma}}\leq M_{n}=\frac{1}{n^{\alpha}}
+\]
+
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Here 
+\begin_inset Formula $1<\alpha\leq\sigma$
+\end_inset
+
+.
+ The sum 
+\begin_inset Formula $\sum_{n}M_{n}$
+\end_inset
+
+ converges because 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Application To 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The criteria have been met, so we can legitimately move the limit inside
+ the sum.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\lim_{\sigma\rightarrow\infty}\sum_{n}\frac{1}{n^{s}} & =\sum_{n}\lim_{\sigma\rightarrow\infty}\frac{1}{n^{s}}=1+0+0+\ldots
+\end{align*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So 
+\begin_inset Formula $\zeta(s)\rightarrow1$
+\end_inset
+
+, as 
+\begin_inset Formula $\sigma\rightarrow+\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Proof
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{j\rightarrow\infty}\sum_{k}f_{k}(j)=\sum_{k}\lim_{j\rightarrow\infty}f_{k}(j)
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let's first show the RHS sum of the limit actually exists.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+By definition, 
+\begin_inset Formula $\left|f_{k}(j)\right|\leq M_{k}$
+\end_inset
+
+, and 
+\begin_inset Formula $\sum_{k}M_{k}$
+\end_inset
+
+ converges, so 
+\begin_inset Formula $\sum_{k}\left|f_{k}(j)\right|$
+\end_inset
+
+ also converges.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Therefore 
+\begin_inset Formula $\sum_{k}f_{k}(j)$
+\end_inset
+
+ converges absolutely, including as 
+\begin_inset Formula $j\rightarrow\infty$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+That is, the sum of limits 
+\begin_inset Formula $\sum_{k}\lim_{j\rightarrow\infty}f_{k}(j)$
+\end_inset
+
+ converges.
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
