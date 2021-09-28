@@ -886,5 +886,373 @@ That is, the sum of limits
 \end_layout
 
 \end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Proof
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Now let's show the LHS limit of the sum is the RHS sum of the limits.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The following easy inequality will be useful.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size small
+
+\begin_inset Formula 
+\[
+\left|f_{k}(j)-f_{k}\right|\leq\left|f_{k}(j)\right|+\left|f_{k}\right|\leq M_{k}+M_{k}=2M_{k}
+\]
+
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Since 
+\begin_inset Formula $\sum_{k}M_{k}$
+\end_inset
+
+ converges there must be an 
+\begin_inset Formula $N$
+\end_inset
+
+ so that 
+\begin_inset Formula $\sum_{k=N}M_{k}<\epsilon$
+\end_inset
+
+, where 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is as small as we require.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\[
+\left|\sum_{k=N}f_{k}(j)\right|\leq\sum_{k=N}\left|f_{k}(j)\right|\leq\sum_{k=N}M_{k}<\epsilon
+\]
+
+\end_inset
+
+
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The following is the case when 
+\begin_inset Formula $j\rightarrow\infty$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\size footnotesize
+
+\begin_inset Formula 
+\[
+\left|\sum_{k=N}f_{k}\right|\leq\sum_{k=N}\left|f_{k}\right|\leq\sum_{k=N}M_{k}<\epsilon
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Proof
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Consider the absolute difference between 
+\begin_inset Formula $\sum_{k}f_{k}(j)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{k}f_{k}$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Looks complicated, but it is simply splitting the sums over 
+\begin_inset Formula $[0,\infty]$
+\end_inset
+
+ into sums over 
+\begin_inset Formula $[0,N-1]$
+\end_inset
+
+ and 
+\begin_inset Formula $[N,\infty]$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset Formula 
+\begin{align*}
+\left|\sum_{k}f_{k}(j)-\sum_{k}f_{k}\right| & =\left|\sum_{k}^{N-1}f_{k}(j)+\sum_{k=N}f_{k}(j)-\sum_{k}^{N-1}f_{k}-\sum_{k=N}f_{k}\right|\\
+\\
+ & \leq\left|\sum_{k=N}f_{k}(j)\right|+\left|\sum_{k=N}f_{k}\right|+\left|\sum_{k}^{N-1}f_{k}(j)-\sum_{k}^{N-1}f_{k}\right|\\
+\\
+ & <2\epsilon+\left|\sum_{k}^{N-1}\left(f_{k}(j)-f_{k}\right)\right|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Proof
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+As 
+\begin_inset Formula $j\rightarrow\infty$
+\end_inset
+
+, the finite sum 
+\begin_inset Formula $\sum_{k}^{N-1}\left(f_{k}(j)-f_{k}\right)\rightarrow0$
+\end_inset
+
+, which leaves a simpler inequality.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\lim_{j\rightarrow\infty}\left|\sum_{k}f_{k}(j)-\sum_{k}f_{k}\right|<2\epsilon
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Because 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ can be as small as we require, we have 
+\begin_inset Formula $\lim_{j\rightarrow\infty}\sum_{k}f_{k}(j)=\sum_{k}f_{k}$
+\end_inset
+
+, which proves the theorem.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{j\rightarrow\infty}\sum_{k}f_{k}(j)=\sum_{k}f_{k}=\sum_{k}\lim_{j\rightarrow\infty}f_{k}(j)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
