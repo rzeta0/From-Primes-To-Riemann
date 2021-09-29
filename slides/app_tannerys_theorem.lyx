@@ -335,7 +335,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Tannery's Theorem tells us when we can swap sum and limit operators.
+Tannery's Theorem tells us when we can safely swap sum and limit operators.
 \end_layout
 
 \end_deeper
@@ -708,8 +708,7 @@ Application To
 
 \begin_deeper
 \begin_layout Itemize
-The criteria have been met, so we can legitimately move the limit inside
- the sum.
+The criteria have been met, so we can safely move the limit inside the sum.
 \begin_inset ERT
 status open
 
@@ -806,7 +805,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Let's first show the RHS sum of the limit actually exists.
+Let's first show the RHS sum of the limits actually exists.
 \begin_inset ERT
 status open
 
@@ -1222,7 +1221,7 @@ Because
 \begin_inset Formula $\epsilon$
 \end_inset
 
- can be as small as we require, we have 
+ can be as small as we require, we finally have 
 \begin_inset Formula $\lim_{j\rightarrow\infty}\sum_{k}f_{k}(j)=\sum_{k}f_{k}$
 \end_inset
 
