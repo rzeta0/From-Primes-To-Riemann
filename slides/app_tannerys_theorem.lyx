@@ -830,11 +830,7 @@ By definition,
 \begin_inset Formula $\sum_{k}M_{k}$
 \end_inset
 
- converges, so 
-\begin_inset Formula $\sum_{k}\left|f_{k}(j)\right|$
-\end_inset
-
- also converges.
+ converges.
  
 \begin_inset ERT
 status open
@@ -852,15 +848,22 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Therefore 
-\begin_inset Formula $\sum_{k}f_{k}(j)$
-\end_inset
-
- converges absolutely, including as 
 \begin_inset Formula $j\rightarrow\infty$
 \end_inset
 
-.
+ gives us 
+\begin_inset Formula $\left|f_{k}\right|\leq M_{k}$
+\end_inset
+
+, and so 
+\begin_inset Formula $\sum_{k}\left|f_{k}\right|$
+\end_inset
+
+ converges, which in turn means 
+\begin_inset Formula $\sum_{k}f_{k}$
+\end_inset
+
+ converges absolutely.
 \begin_inset ERT
 status open
 
