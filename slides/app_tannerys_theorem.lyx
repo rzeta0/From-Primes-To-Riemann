@@ -927,32 +927,7 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-The following easy inequality will be useful.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\size small
-
-\begin_inset Formula 
-\[
-\left|f_{k}(j)-f_{k}\right|\leq\left|f_{k}(j)\right|+\left|f_{k}\right|\leq M_{k}+M_{k}=2M_{k}
-\]
-
-\end_inset
-
-
-\size default
-
+The following inequalities will be useful.
 \begin_inset ERT
 status open
 
