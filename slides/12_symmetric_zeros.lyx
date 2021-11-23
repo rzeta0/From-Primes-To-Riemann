@@ -118,30 +118,47 @@ Common Strategy
 
 \begin_deeper
 \begin_layout Itemize
-Common strategy for wrestling with the Riemann Hypothesis is exploring propertie
-s of its zeros.
+A common strategy for wrestling with the Riemann Hypothesis is exploring
+ the properties of its zeros.
  
-\begin_inset ERT
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Let's start with the property 
+Property 
 \begin_inset Formula $\zeta(\overline{s})=\overline{\zeta(s)}$
 \end_inset
 
-, which we showed holds for the series 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+We showed the property 
+\begin_inset Formula $\zeta(\overline{s})=\overline{\zeta(s)}$
+\end_inset
+
+ showed holds for the series 
 \begin_inset Formula $\zeta(s)=\sum1/n^{s}$
 \end_inset
 
@@ -193,137 +210,13 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Instead of doing this with uninteresting algebra, we'll use the powerful
- principle of 
+Instead of doing this with slightly laborious algebra, we'll introduce and
+ use the powerful principle of 
 \series bold
 analytic continuation
 \series default
 .
  
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator plain
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-\begin_inset Formula $\zeta(s)$
-\end_inset
-
- as 
-\begin_inset Formula $\sigma\rightarrow+\infty$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-
-\end_layout
-
-\begin_deeper
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\lim_{\sigma\rightarrow\infty}\sum_{n}\frac{1}{n^{s}}=\lim_{\sigma\rightarrow\infty}\left(\frac{1}{1^{s}}+\frac{1}{2^{s}}+\ldots\right)
-\]
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-Tempting to say 
-\begin_inset Formula $|n^{-s}|=n^{-\sigma}\rightarrow0$
-\end_inset
-
- as 
-\begin_inset Formula $\sigma\rightarrow\infty$
-\end_inset
-
- for all 
-\begin_inset Formula $n$
-\end_inset
-
- except 
-\begin_inset Formula $n=1$
-\end_inset
-
-, then conclude 
-\begin_inset Formula $\zeta(s)\rightarrow1$
-\end_inset
-
- as 
-\begin_inset Formula $\sigma\rightarrow\infty$
-\end_inset
-
-.
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-In effect, this takes the limit inside the sum.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\sum_{n}\lim_{\sigma\rightarrow\infty}\frac{1}{n^{s}}=\lim_{\sigma\rightarrow\infty}\left(\frac{1}{1^{s}}\right)+\lim_{\sigma\rightarrow\infty}\left(\frac{1}{2^{s}}\right)+\ldots
-\]
-
-\end_inset
-
-
 \end_layout
 
 \end_deeper
