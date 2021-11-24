@@ -158,7 +158,7 @@ We showed the property
 \begin_inset Formula $\zeta(\overline{s})=\overline{\zeta(s)}$
 \end_inset
 
- showed holds for the series 
+ holds for the series 
 \begin_inset Formula $\zeta(s)=\sum1/n^{s}$
 \end_inset
 
@@ -217,6 +217,813 @@ analytic continuation
 \series default
 .
  
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intuition For Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/part_2/analytic_continuation.pdf
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intuition For Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The left picture shows a complex function 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ defined on a domain 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ It also shows a larger domain 
+\begin_inset Formula $B$
+\end_inset
+
+ which includes domain 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The complex function 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ is defined on domain 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ Note 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ is not valid on the larger domain 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ agrees with 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ on the domain 
+\begin_inset Formula $A$
+\end_inset
+
+, then we can see that 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ is more general than 
+\begin_inset Formula $f(z)$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We call 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ an 
+\series bold
+analytic continuation
+\series default
+ of 
+\begin_inset Formula $f(z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intuition For Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let's go a little further.
+ The right picture shows a domain 
+\begin_inset Formula $B$
+\end_inset
+
+ which overlaps, but doesn't completely cover, domain 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ agrees with 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ where 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ overlap, we can see how 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ and 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ are representations of the same function.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If we initially know 
+\begin_inset Formula $f(z)$
+\end_inset
+
+ and then later find 
+\begin_inset Formula $g(z)$
+\end_inset
+
+, we can say again 
+\begin_inset Formula $g(z)$
+\end_inset
+
+ is an analytic continuation of 
+\begin_inset Formula $f(z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Intuition For Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Intuition
+\series default
+ is that if two complex functions match over a shared domain, they must
+ represent the same function.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For this intuition to be valid, the functions must be well behaved enough
+ to only allow a single unique extension.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Analytic functions
+\series default
+ have this good behaviour.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We'll define analytic functions and explain analytic continuation more precisely
+ next time.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Using Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let's construct a function
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(s)=\zeta(s)-\overline{\zeta(\overline{s})}
+\]
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Wherever 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+ is analytic, so is 
+\begin_inset Formula $f(s)$
+\end_inset
+
+.
+ This is because 
+\begin_inset Formula $\overline{\zeta(\overline{s})}$
+\end_inset
+
+ is analytic too.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We know 
+\begin_inset Formula $f(s)=0$
+\end_inset
+
+ along the real line where 
+\begin_inset Formula $\sigma>1$
+\end_inset
+
+.
+ Using analytic continuation, 
+\begin_inset Formula $f(s)$
+\end_inset
+
+ must also be zero in any connected domain where 
+\begin_inset Formula $f(s)$
+\end_inset
+
+ is analytic.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Using Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+So 
+\begin_inset Formula $f(s)=0$
+\end_inset
+
+ in the complex half-plane 
+\begin_inset Formula $\sigma>1$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+...
+ and also 
+\begin_inset Formula $\sigma>0$
+\end_inset
+
+ because we extended 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+ to this larger domain, where it remains analytic except at 
+\begin_inset Formula $s=1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+But 
+\begin_inset Formula $f(s)=0$
+\end_inset
+
+ means 
+\begin_inset Formula $\zeta(\overline{s})=\overline{\zeta(s)}$
+\end_inset
+
+, which means this property holds in 
+\begin_inset Formula $\sigma>0$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If later we analytically continue 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+ into 
+\begin_inset Formula $\sigma<0$
+\end_inset
+
+, this property will continue to hold there too.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Symmetric Zeros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If 
+\begin_inset Formula $\zeta(s)=0$
+\end_inset
+
+ then the property 
+\begin_inset Formula $\zeta(\overline{s})=\overline{\zeta(s)}$
+\end_inset
+
+ tells us 
+\begin_inset Formula $\zeta(\overline{s})=0$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\zeta(s)=0\implies\zeta(\overline{s})=0
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This means the zeros exist in symmetric pairs 
+\begin_inset Formula $\sigma+it$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma-it$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Zeros are mirrored above and below the real line, or lie on it.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Thoughts
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+For a first attempt, this is quite an enlightening insight into the zeros
+ of the Riemann Zeta function 
+\begin_inset Formula $\zeta(s)$
+\end_inset
+
+.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Zeros existing in symmetric pairs 
+\begin_inset Formula $\sigma\pm it$
+\end_inset
+
+ is compatible with the Riemann Hypothesis
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+...
+ but sadly it doesn't mean they all lie on a single line 
+\begin_inset Formula $\sigma=a$
+\end_inset
+
+, never mind the holy grail 
+\begin_inset Formula $\sigma=1/2$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
