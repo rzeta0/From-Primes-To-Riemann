@@ -210,8 +210,8 @@ bigskip
 \end_layout
 
 \begin_layout Itemize
-Instead of doing this with slightly laborious algebra, we'll introduce and
- use the powerful principle of 
+Instead of doing this with uninteresting algebra, let's introduce and use
+ the powerful principle of 
 \series bold
 analytic continuation
 \series default
@@ -436,8 +436,7 @@ Intuition For Analytic Continuation
 
 \begin_deeper
 \begin_layout Itemize
-Let's go a little further.
- The right picture shows a domain 
+The right picture shows a domain 
 \begin_inset Formula $B$
 \end_inset
 
@@ -684,45 +683,6 @@ Wherever
 \end_inset
 
 .
- This is because 
-\begin_inset Formula $\overline{\zeta(\overline{s})}$
-\end_inset
-
- is analytic too.
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bigskip
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-We know 
-\begin_inset Formula $f(s)=0$
-\end_inset
-
- along the real line where 
-\begin_inset Formula $\sigma>1$
-\end_inset
-
-.
- Using analytic continuation, 
-\begin_inset Formula $f(s)$
-\end_inset
-
- must also be zero in any connected domain where 
-\begin_inset Formula $f(s)$
-\end_inset
-
- is analytic.
 \end_layout
 
 \end_deeper
@@ -747,6 +707,57 @@ Using Analytic Continuation
 \end_layout
 
 \begin_deeper
+\begin_layout Itemize
+We know 
+\begin_inset Formula $f(s)=0$
+\end_inset
+
+ along the real line where 
+\begin_inset Formula $\sigma>1$
+\end_inset
+
+.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+By analytic continuation, 
+\begin_inset Formula $f(s)$
+\end_inset
+
+ must also be zero in any connected domain where 
+\begin_inset Formula $f(s)$
+\end_inset
+
+ is analytic.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bigskip
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Itemize
 So 
 \begin_inset Formula $f(s)=0$
@@ -788,14 +799,22 @@ bigskip
 
 .
  
-\begin_inset ERT
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-bigskip
+Using Analytic Continuation
 \end_layout
 
 \end_inset
@@ -803,6 +822,51 @@ bigskip
 
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /Users/tariq/Desktop/primes_riemann/part_2/analytic_continuation_2.pdf
+	width 95text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Using Analytic Continuation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 But 
 \begin_inset Formula $f(s)=0$
